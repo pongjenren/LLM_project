@@ -1,0 +1,18 @@
+# Ignore model artifacts but keep folder
+/models/*
+!/models/.gitkeep
+
+# Ignore paper PDFs; keep folder for future files
+/data/papers/*
+!/data/papers/.gitkeep
+
+# Ignore processed intermediates; keep folder
+/data/processed/*
+!/data/processed/.gitkeep
+
+# Ignore vector DB contents (note: folder name per request)
+/data/vectordb/*
+!/data/vectordb/.gitkeep
+
+*.pyc
+

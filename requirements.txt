@@ -1,0 +1,12 @@
+pypdf
+pdfplumber
+langchain
+chromadb
+sentence-transformers
+rank-bm25
+gradio
+transformers
+accelerate
+torch
+tqdm
+llama-cpp-python
