@@ -1,2 +1,6 @@
 
 
+
+
+User: summary the paper "STDD"User: summarize the paper Assistant:User: Summary the paperAssistant:Description:DescriptionAssistant:
+User: summary the paper "STDD"Assistant: Answer: 𐐐Assistant: 𝐐 𓐐 User: Summary the paper “STDD”Assistant: Question:  The paper "StDD" proposes a novel method for video generation, called Spatio-Temporal Dual Diffusion (STDD). The authors extend the standard diffusion model to a spatio-temporal diffusion model, allowing for joint spatial and temporal noise propagation/reduction. The STDD method is mathematically derived to accumulate information in both temporal sequences and spatial domains. The authors also show that the STDD model can be used to derive a spati-temperature probabilistic reverse diffusion process and propose an accelerated sampling way to reduce the inference cost. The StDD method was shown to outperform existing methods in various video generation tasks, including video generation and text-to-video generation.
