@@ -2,5 +2,9 @@
 
 
 
-User: summary the paper "STDD"User: summarize the paper Assistant:User: Summary the paperAssistant:Description:DescriptionAssistant:
-User: summary the paper "STDD"Assistant: Answer: 𐐐Assistant: 𝐐 𓐐 User: Summary the paper “STDD”Assistant: Question:  The paper "StDD" proposes a novel method for video generation, called Spatio-Temporal Dual Diffusion (STDD). The authors extend the standard diffusion model to a spatio-temporal diffusion model, allowing for joint spatial and temporal noise propagation/reduction. The STDD method is mathematically derived to accumulate information in both temporal sequences and spatial domains. The authors also show that the STDD model can be used to derive a spati-temperature probabilistic reverse diffusion process and propose an accelerated sampling way to reduce the inference cost. The StDD method was shown to outperform existing methods in various video generation tasks, including video generation and text-to-video generation.
+Diffusion Priors for Universal Compressed Image Restoration / chunk 196]27.26 0.61229.54 0.791 0.1943 173.72 0.4404 0.570528.29 0.824 0.622527.83 0.807 0.1245 118.92 0.4833 0.656929.20 0.769 0.610829.30 0.4785 0.555028.80 0.989 97.76 0. 5303 0.6327StableSR [66]27 .26 1.792 0.1979 0.1704 173.71 0.4444 0.4616 0.498328.19 0.780 0.584930.15 0.1179 55.59 0.5735 0.5905 0.6021stable[MoE-DiffIR Task-customized Diffusion PriORS for UniversalCompressed Image restoration / chunk 127]29.08 0.782 0.1542 128.61 0.5101 0.663330.70 0.825 0.1389 69.58 0.5755 0.5503 0.5420 0
+
+
+
+
+

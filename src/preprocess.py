@@ -19,12 +19,20 @@ class Chunk:
     metadata: Dict[str, Any]
 
 
+def _clean_text(text: str) -> str:
+    """
+    Remove surrogate/invalid unicode characters to avoid json.dump/write_text errors.
+    """
+    return text.encode("utf-8", "ignore").decode("utf-8", "ignore")
+
+
 def read_pdf(path: Path) -> str:
     """將 PDF 轉成純文字。"""
     reader = PdfReader(str(path))
     texts = []
     for page in reader.pages:
-        texts.append(page.extract_text() or "")
+        page_text = page.extract_text() or ""
+        texts.append(_clean_text(page_text))
     return "\n".join(texts)
 
 
@@ -39,10 +47,11 @@ def split_into_chunks(text: str, paper_title: str) -> List[Chunk]:
 
     chunks: List[Chunk] = []
     for i, c in enumerate(raw_chunks):
+        cleaned = _clean_text(c)
         chunks.append(
             Chunk(
                 id=f"{paper_title}_chunk_{i}",
-                content=c,
+                content=cleaned,
                 metadata={
                     "paper_title": paper_title,
                     "chunk_index": i,
@@ -65,7 +74,7 @@ def preprocess_all_papers() -> List[Chunk]:
 
     # 將 chunks 存成 json 方便之後重用
     serialized = [
-        {"id": c.id, "content": c.content, "metadata": c.metadata}
+        {"id": c.id, "content": _clean_text(c.content), "metadata": c.metadata}
         for c in all_chunks
     ]
     output_path = paths.PROCESSED_DIR / "chunks.json"

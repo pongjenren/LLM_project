@@ -1,0 +1,31 @@
+=== Evaluation Summary ===
+Paper: LION: Empowering Multimodal Large Language Model with Dual-Level Visual Knowledge
+  - MCQ Accuracy: 20.00% (1.0/5)
+  - Open-ended Avg Score (0-4): 1.60
+Paper: LLM-Check: Investigating Detection of Hallucinations in Large Language Models
+  - MCQ Accuracy: 0.00% (0.0/5)
+  - Open-ended Avg Score (0-4): 1.80
+Paper: Interleaved-Modal Chain-of-Thought
+  - MCQ Accuracy: 20.00% (1.0/5)
+  - Open-ended Avg Score (0-4): 2.80
+Paper: Knowledge Image Matters: Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models
+  - MCQ Accuracy: 0.00% (0.0/5)
+  - Open-ended Avg Score (0-4): 2.00
+Paper: Rethinking Visual Token Reduction in LVLMs under Cross-modal Misalignment
+  - MCQ Accuracy: 0.00% (0.0/5)
+  - Open-ended Avg Score (0-4): 1.80
+Paper: Compression-Aware One-Step Diffusion Model for JPEG Artifact Removal
+  - MCQ Accuracy: 0.00% (0.0/5)
+  - Open-ended Avg Score (0-4): 2.80
+Paper: Reversing the Damage: A QP-Aware Transformer-Diffusion Approach for 8K Video Restoration under Codec Compression
+  - MCQ Accuracy: 0.00% (0.0/5)
+  - Open-ended Avg Score (0-4): 0.60
+Paper: PromptCIR: Blind Compressed Image Restoration with Prompt Learning
+  - MCQ Accuracy: 20.00% (1.0/5)
+  - Open-ended Avg Score (0-4): 1.00
+Paper: MoE-DiffIR: Task-customized Diffusion Priors for Universal Compressed Image Restoration
+  - MCQ Accuracy: 0.00% (0.0/5)
+  - Open-ended Avg Score (0-4): 2.80
+Paper: DriftRec: Adapting diffusion models to blind JPEG restoration
+  - MCQ Accuracy: 60.00% (3.0/5)
+  - Open-ended Avg Score (0-4): 2.40

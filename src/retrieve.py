@@ -1,7 +1,7 @@
 # src/retrieve.py
 
 from __future__ import annotations
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 
 from rank_bm25 import BM25Okapi
 
@@ -10,19 +10,26 @@ from .config import retrieval_cfg
 
 
 class HybridRetriever:
-    def __init__(self, chunks: List[str], ids: List[str], metadatas: List[Dict[str, Any]]):
+    def __init__(
+        self,
+        chunks: List[str],
+        ids: List[str],
+        metadatas: List[Dict[str, Any]],
+        store: Optional[EmbeddingStore] = None,
+    ):
         """
         chunks: 所有 chunk 的文字內容
         ids:    對應 chunk 的 id
         metadatas: 對應 metadata
         """
-        self.store = EmbeddingStore()
-        self.ids = ids
-        self.metadatas = metadatas
-        self.chunks = chunks
+        self.store = store or EmbeddingStore()
+        self.ids = ids or []
+        self.metadatas = metadatas or []
+        self.chunks = chunks or []
 
-        tokenized = [c.split() for c in chunks]
-        self.bm25 = BM25Okapi(tokenized)
+        tokenized = [c.split() for c in self.chunks] if self.chunks else []
+        # BM25Okapi 需要至少一個 document；如果沒有資料就用 None 當占位，避免初始化失敗。
+        self.bm25 = BM25Okapi(tokenized) if tokenized else None
 
     def _semantic_retrieve(self, query: str, k: int):
         res = self.store.semantic_search(query, k=k)
@@ -30,6 +37,9 @@ class HybridRetriever:
         return res
 
     def _keyword_retrieve(self, query: str, k: int):
+        if self.bm25 is None:
+            return []
+
         scores = self.bm25.get_scores(query.split())
         # 取得 top-k index
         ranked = sorted(
@@ -61,7 +71,13 @@ class HybridRetriever:
         }
 
         # Collect union of ids
-        id_to_content = {cid: (doc, meta) for cid, doc, meta in zip(self.ids, self.chunks, self.metadatas)}
+        id_to_content = {
+            cid: (doc, meta)
+            for cid, doc, meta in zip(self.ids, self.chunks, self.metadatas)
+        }
+        # semantic search 也要能找回內容，避免 BM25 corpus 為空時無法 mapping
+        for cid, doc, meta in zip(sem_ids, sem_docs, sem_metas):
+            id_to_content.setdefault(cid, (doc, meta))
         merged_ids = set(sem_ids) | set(kw_scores.keys())
 
         alpha = retrieval_cfg.HYBRID_ALPHA

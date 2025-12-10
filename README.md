@@ -22,6 +22,14 @@ I'm using GPU with only 8GB VRAM, if your VRAM is >= 16GB, consider using native
 3. add: src/llm_gguf.py
 4. revise: src/rag_pipeline.py
 
+Hybrid Retrival
+```
+rag_pipeline line 35, 93
+```
+
+跑eval時:
+把rag_pipeline.py中的instruction 註解掉，移到open question那邊
+
 
 
 # 📚 Personal Research Notes Assistant
@@ -38,7 +46,7 @@ This project implements a fully local **Retrieval-Augmented Generation (RAG)** s
 
 * 🔍 **PDF ingestion**：讀取論文並切成語意片段
 * 🧠 **Embedding + ChromaDB**：以 E5-large-v2 建立向量資料庫
-* 🎯 **Hybrid Retrieval**（可加入 BM25）⚠️ Not implemented yet ⚠️
+* 🎯 **Hybrid Retrieval**（semantic + BM25）
 * 🤖 **LLM generation using Llama 3 8B GGUF**（llama-cpp-python）
 * 📝 **Long-term memory module**（自動摘要最近對話）⚠️ Not implemented yet ⚠️
 * 💬 **Gradio UI**（互動式查詢）

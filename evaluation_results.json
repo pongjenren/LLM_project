@@ -1,0 +1,882 @@
+{
+    "LION: Empowering Multimodal Large Language Model with Dual-Level Visual Knowledge": {
+        "mc_correct": 0.0,
+        "mc_total": 5,
+        "open_scores": [
+            2,
+            2,
+            3,
+            2,
+            0
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "What are the two specific levels of visual knowledge that the LION model aims to inject into the Multimodal Large Language Model (MLLM)?",
+                "pred_raw": " LION model aims to inject visual knowledge in two specific levels of visual knowledge.",
+                "pred_parsed": "",
+                "ref": "B",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What is the primary function of the 'Vision Aggregator' module introduced in the LION architecture?",
+                "pred_raw": " Vision Aggregator extracts more sufficient visual details from input images, and combines them with fine-grained spatial-aware visual features from the vision aggregator.",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Why does LION employ a 'stage-wise instruction-tuning strategy' instead of a single-stage training process?",
+                "pred_raw": " (x, y, z, w)\n\n            Where:\n            - (x, y, z, w) are the coordinates of the glass of beer in the image.",
+                "pred_parsed": "",
+                "ref": "B",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which mechanism does LION use to incorporate high-level semantic visual evidence (image tags) while mitigating the influence of imperfect predictions?",
+                "pred_raw": " \n            What is the mechanism that LION uses to incorporate high-level semantic visual evidence (image tags) while mitigating the influence of imperfect predictions?",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "On which benchmark did LION demonstrate a significant ability to alleviate object hallucination compared to models like InstructBLIP and Shikra?",
+                "pred_raw": " LION achieves significant improvements on the POPE benchmark, demonstrating a significant ability to alleviate object hallucination compared to models like InstructBLIP and Shikra.",
+                "pred_parsed": "",
+                "ref": "A",
+                "score": 0.0
+            },
+            {
+                "type": "Open",
+                "q": "What is the main limitation of existing MLLMs (like InstructBLIP) that LION attempts to address regarding their vision encoders?",
+                "pred": " Provide a concise summary of the main limitation of existing MLLMs regarding their vision encoders.",
+                "ref": "Most existing MLLMs primarily adopt vision encoders pretrained on coarsely aligned image-text pairs (image-level supervision). This leads to insufficient extraction and reasoning of visual knowledge, causing the models to possess limited image understanding capabilities and often resulting in erroneous or hallucinated responses.",
+                "score": 2
+            },
+            {
+                "type": "Open",
+                "q": "Describe the structure and purpose of the 'Mixture-of-Adapters' with a Router in the LION model.",
+                "pred": " Mixture-of-Adapters with a Router in the LION model.",
+                "ref": "The Mixture-of-Adapters is used in the third stage of instruction-tuning to combine image-level and region-level capabilities. It treats different adapters (Image-Level Adapter and Region-Level Adapter) as experts. A router module dynamically aggregates hidden features from these adapter branches based on the specific task type (image-level VL tasks or fine-grained visual grounding tasks) to avoid interference and maximize complementarity.",
+                "score": 2
+            },
+            {
+                "type": "Open",
+                "q": "How does the LION model utilize the Recognize Anything Model (RAM)?",
+                "pred": " LION model utilizes the Recognize Anything Model (RAM) by incorporating image tags as high-level semantic visual evidence.",
+                "ref": "LION uses the off-the-shelf Recognize Anything Model (RAM) to extract high-level semantic knowledge in the form of image tags (encompassing objects, scenes, actions, and attributes). These tags serve as supplementary visual evidence to support comprehensive visual perception and are integrated into the model using a soft prompting method.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "According to the paper, what specific layers of the vision encoder does the Vision Aggregator use as input, and why?",
+                "pred": " Provide a concise summary of the information in the notes.",
+                "ref": "The Vision Aggregator uses hidden features from middle layers of the vision encoder, specifically layers at indices L-1, 2L/3, and L/3 (where L is the total number of layers). This is done because different transformer layers learn visual information at different scales, and aggregating these multi-level features helps the model better capture visual details required for fine-grained spatial awareness.",
+                "score": 2
+            },
+            {
+                "type": "Open",
+                "q": "What were the findings of the ablation study regarding the removal of the Vision Aggregator?",
+                "pred": "",
+                "ref": "The ablation study showed that removing the Vision Aggregator resulted in a degradation of performance on Referring Expression Comprehension (REC) tasks. This validates that aggregating multi-level vision features via the Vision Aggregator effectively promotes the extraction of fine-grained spatial-aware visual knowledge.",
+                "score": 0
+            }
+        ]
+    },
+    "LLM-Check: Investigating Detection of Hallucinations in Large Language Models": {
+        "mc_correct": 0.0,
+        "mc_total": 5,
+        "open_scores": [
+            1,
+            3,
+            3,
+            1,
+            1
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "Which specific metrics does the proposed LLM-Check method utilize to detect hallucinations within a single model response?",
+                "pred_raw": " LLM-Check utilizes internal hidden representations, attention similarity maps, and output prediction probabilities to detect hallucinations within a single model response.",
+                "pred_parsed": "",
+                "ref": "B",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "According to the experimental results, what is the observed speedup of LLM-Check compared to other baselines?",
+                "pred_raw": " LLM-Check achieves significant speedups compared to other baselines, with speedups of up to 45x and 450x.",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "How is the 'Attention Score' in LLM-Check mathematically derived?",
+                "pred_raw": " Attention Score = [Value]\n\n\nThe final answer for the question is: Attention Score = [Value]",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "In the 'black-box' setting where the original LLM is inaccessible, how does LLM-Check perform detection?",
+                "pred_raw": " Briefly explain how neural networks work in layman's terms.",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which dataset was used to analyze the performance of LLM-Check on fine-grained hallucination types such as 'entity', 'relation', and 'invented'?",
+                "pred_raw": " The dataset used to analyze the performance of LLM-Check on fine-grained hallucination types such as 'entity', 'relation', and 'invented' is the RAGTruth dataset.",
+                "pred_parsed": "",
+                "ref": "E",
+                "score": 0.0
+            },
+            {
+                "type": "Open",
+                "q": "Explain the difference between the 'Hidden Score' calculation in LLM-Check and the approach used by INSIDE.",
+                "pred": "\n\nThe Hidden Score calculation in LLM-Check achieves a higher F1 score compared to other detection methods. The Attention scores are also better in the overall black-box setting, where we compute a weighted average since different models hallucinate at different frequencies on the same prompt data. Additionally, we observe that LLM-Check performs better on larger models.",
+                "ref": "LLM-Check computes the Hidden Score by calculating the mean log-determinant of the covariance matrix of hidden representations for a single response (sample-level), whereas INSIDE computes the centered covariance matrix across multiple independent responses to check for self-consistency at a population level.",
+                "score": 1
+            },
+            {
+                "type": "Open",
+                "q": "What is the rationale behind using the 'Windowed Logit Entropy score' instead of a standard length-averaged entropy score?",
+                "pred": "\n            Sure, here's the answer to the question:\n\nThe rationale behind using the 'Windowed Logit Entropy score' instead of a standard length-averaged entropy score is that it is more sensitive to short sequences of hallucinatory material and is not diluted by sequence length normalization. This makes it a better choice for detecting hallucinations in language models.",
+                "ref": "Standard length-averaged scores might dilute the signal of short hallucinatory sequences within a longer text. The Windowed Logit Entropy score computes entropy across overlapping windows and takes the maximum, making it sensitive to specific short spans of hallucinatory material.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "What qualitative difference in log-eigenvalues did the authors observe between hallucinatory and truthful responses when visualizing the Attention Scores?",
+                "pred": "\n\nThe log-eigenvalues of the Hallucinated response are indeed larger in value, indicating that the rich latent space representations of the LLM are indeed indicative of the presence of hallucinated text.",
+                "ref": "The authors observed that the log-eigenvalues (specifically the diagonal values of the log-kernel) for hallucinated responses were consistently larger than those for truthful responses, indicating that the model's latent representations are sensitive to the presence of hallucinations.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "Why does LLM-Check advocate for using a single model response for detection rather than consistency-based methods like SelfCheckGPT?",
+                "pred": " (e.g., \"The provided context does not mention the reason for using a single model response, so I cannot answer this question.\")",
+                "ref": "Consistency-based methods like SelfCheckGPT require generating multiple additional responses at inference time, which induces significant computational overheads and costs. LLM-Check aims to be efficient and applicable in real-time by analyzing only the single generated response.",
+                "score": 1
+            },
+            {
+                "type": "Open",
+                "q": "What does the 'Hidden Score' theoretically capture regarding the model's internal state?",
+                "pred": " \"I cannot find the information in the retrieved notes.\"",
+                "ref": "The Hidden Score uses eigen-analysis (singular values) to capture the interaction in latent space between different token representations. It posits that the variations in these representations differ between truthful and hallucinatory sequences due to the model's sensitivity to grounded facts encountered during training.",
+                "score": 1
+            }
+        ]
+    },
+    "Interleaved-Modal Chain-of-Thought": {
+        "mc_correct": 0.0,
+        "mc_total": 5,
+        "open_scores": [
+            3,
+            2,
+            3,
+            3,
+            1
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "What is the primary limitation of existing multimodal Chain-of-Thought (CoT) methods that the proposed ICoT aims to address?",
+                "pred_raw": " ICoT [Chunk number]\n\n\nAnswer: ICoT [Chunk 17]",
+                "pred_parsed": "",
+                "ref": "B",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What does the abbreviation ADS stand for in the context of the proposed framework?",
+                "pred_raw": " ADS stands for Attention-driven Selection.",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which two Vision-Language Models (VLMs) were used to implement and evaluate the ICoT method in this paper?",
+                "pred_raw": " (A) GPT-4V and Claude 3 Opus",
+                "pred_parsed": "A",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "How does the Attention-driven Selection (ADS) strategy determine which visual patches to insert into the rationale?",
+                "pred_raw": " Attention-driven Selection (ADS) selects patches from the input image by identifying optimal visual information from the attention map of the signal token.",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What was the observed result when attempting to realize ICoT by copying the Key-Value (KV) Cache of visual tokens instead of providing them at the input end?",
+                "pred_raw": " (Choose an option from the given choices)\n\nThe observed result when attempting to realize ICoT by copying the Key-Value (KV) Cache of visual tokens instead of providing them at the input end was:\n\nA. It led to a significant performance improvement due to reduced latency.\nB. It caused performance degradation because the position information became insensitive.\nC. It had no impact on performance but doubled the memory usage.\nD. It allowed the model to generate higher resolution images.\nE. It enabled the model to process audio inputs simultaneously.",
+                "pred_parsed": "A",
+                "ref": "B",
+                "score": 0.0
+            },
+            {
+                "type": "Open",
+                "q": "Explain the core concept of Interleaved-modal Chain-of-Thought (ICoT) and how it differs from traditional multimodal CoT.",
+                "pred": "",
+                "ref": "ICoT generates sequential reasoning steps consisting of paired visual and textual rationales (interleaved-modal) to infer the final answer. This differs from traditional multimodal CoT, which typically generates text-only rationales that often struggle to express fine-grained associations with the original image.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "Describe the Attention-driven Selection (ADS) strategy and its primary advantages as proposed in the paper.",
+                "pred": "\n            Sure, here is the final answer to the question.\n\nSure, here is the final answer to the question:\n\nAttention-driven Selection (ADS) is a plug-and-play strategy to identify optimal patches from the image without being parameterized. This strategy is effective for ICoT, as it selects patches that contribute to the final answer. However, it has the potential for sub-optimal performance due to the need to store attention scores, which can increase memory overhead. Additionally, the fixed number of selected patches in the ADS design is sub-optimal, resulting in unexpected outputs for VLMs.",
+                "ref": "ADS is a strategy that signals VLMs to select specific patches (visual tokens) from the input image to insert into the reasoning chain, rather than generating new images. It uses the VLM's attention map to identify relevant regions. Its main advantages are that it is a plug-and-play strategy, does not require parameterization (training-free), and introduces ignorable additional latency.",
+                "score": 2
+            },
+            {
+                "type": "Open",
+                "q": "In the ablation study, what was the impact of removing the Fine-grained Visual Information (FVI) from the demonstrations (i.e., using randomly sampled patches)?",
+                "pred": " (Your Answer)",
+                "ref": "Removing Fine-grained Visual Information (FVI) and replacing it with randomly sampled patches in the demonstrations resulted in performance degradation. This proves that high-quality, relevant visual information in the demonstrations is necessary to effectively guide the VLM to think in the ICoT format.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "Based on the case studies, what are the three typical problems in text-only rationales that ICoT helps to resolve?",
+                "pred": " ICoT helps to resolve three typical problems in text-only rationales: misunderstanding, overgeneralization, and hallucination.",
+                "ref": "The case studies demonstrate that ICoT helps resolve three typical problems found in text-only rationales: Misunderstanding (e.g., misidentifying objects), Overgeneralization (e.g., inferring a kite festival from a single kite), and Hallucination (e.g., imagining objects or details not present in the image).",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "What are the limitations of the current ICoT implementation mentioned in the conclusion?",
+                "pred": " ICoT is a novel approach to ICoT that can achieve substantial performance improvement by incorporating established techniques from segmentation or grounding methods.",
+                "ref": "The limitations mentioned include the additional memory overhead required to store attention scores for patch selection in ADS, and the fact that the fixed number of selected patches in the current ADS design is sub-optimal, which can sometimes result in unexpected outputs.",
+                "score": 1
+            }
+        ]
+    },
+    "Knowledge Image Matters: Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models": {
+        "mc_correct": 0.0,
+        "mc_total": 5,
+        "open_scores": [
+            2,
+            1,
+            1,
+            3,
+            0
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "Which specific text-to-image editing toolkit is utilized in Stage 3 of the VKC-MIR pipeline to construct the Visual Knowledge Card?",
+                "pred_raw": " COCOCap, Flickr30K, TextCaps <Image>",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "The VKC-MIR framework was evaluated on which three Knowledge-Based Visual Reasoning (KB-VR) benchmarks?",
+                "pred_raw": " VKC-MIR achieves the highest VQA score of 58.9/64.8/25.1 on the A-OKVQA/OK-VQA benchmark.",
+                "pred_parsed": "A",
+                "ref": "B",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What is the primary function of the 'Visual Knowledge Card' (VKC) proposed in the paper?",
+                "pred_raw": " Visual Knowledge Card and Answer {V KC, A}.",
+                "pred_parsed": "A",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which multi-image Multimodal Large Language Model (MLLM) is employed in the final stage (Stage-4) of the VKC-MIR framework to perform reasoning?",
+                "pred_raw": " mPLUG-Owl3 (Ye et al., 2024)",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "According to the parameter tests in the paper, which strategy for adding knowledge triples to the VKC yielded the best performance?",
+                "pred_raw": " Choose the option that best answers the question. \n             \n            Question: According to the parameter tests in the paper, which strategy for adding knowledge triples to the VKC yielded the best performance?",
+                "pred_parsed": "",
+                "ref": "B",
+                "score": 0.0
+            },
+            {
+                "type": "Open",
+                "q": "Briefly describe the process of 'Visual Scene Perception' (Stage 1) in the VKC-MIR framework.",
+                "pred": " Briefly describe the process of 'Visual Scene Perception' (Stage 1) in the VKC-MIR framework.",
+                "ref": "In Stage 1, the framework first uses HiKER-SGG to generate a scene graph (identifying objects and relations) from the raw image. Then, it uses GLEE to detect and extract key visual entity regions. Finally, it uses Graphviz to visualize the scene graph by replacing entity nodes with their corresponding region images, creating an initial scene image.",
+                "score": 2
+            },
+            {
+                "type": "Open",
+                "q": "How does the paper distinguish the proposed 'Visual Knowledge Card' (VKC) from a Multi-modal Knowledge Graph (MMKG)?",
+                "pred": " Visual Knowledge Card (VKC) is a novel concept that presents knowledge in the form of images, offering a new perspective for multi-image large language models to handle KB-VR tasks.",
+                "ref": "The paper notes two key distinctions: (1) MMKG is typically a super-sized graph incorporating multi-modal knowledge for a specific domain, whereas VKC is a small-size, realistic image generated to enhance a specific original task. (2) MMKG allows for diverse multi-modal data (text, image, video, audio), while VKC primarily allows for text and images (entity region images).",
+                "score": 1
+            },
+            {
+                "type": "Open",
+                "q": "Explain the 'two-step validation approach' used in the framework to handle conflicting knowledge, such as historical facts about an NBA player.",
+                "pred": "\n\nYao Ming was born in Shanghai, China in 1980.",
+                "ref": "The framework uses a Rule-Based Validator (RV-BCK) to check for basic contradictory knowledge errors. For more complex historical conflicts (e.g., a player playing for different teams at different times), it employs an MLLM-Based Validator (MV-HCK). The MLLM determines if a knowledge tuple is relevant to the current image and question context, filtering out correct but irrelevant historical facts.",
+                "score": 1
+            },
+            {
+                "type": "Open",
+                "q": "Why does the paper argue that presenting knowledge in the form of an image (VKC-image) is superior to using textual triples (VKC-triple)?",
+                "pred": " Provide a clear and concise summary of the paper's argument.",
+                "ref": "The experimental results showed that VKC-image consistently outperformed VKC-triple across all datasets. This suggests that multi-image MLLMs can better leverage knowledge when it is presented visually as an image alongside the original input, rather than just as textual context, potentially due to better integration of visual and textual cues.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "What prompting strategy is used in Stage 2 to generate external knowledge using the LLM?",
+                "pred": "",
+                "ref": "In Stage 2, the framework uses few-shot prompting. It employs a retriever to find relevant triple examples from the DBpedia knowledge base. These retrieved examples, along with the domain knowledge text generated by the LLM, are included in the prompt to guide the LLM in extracting significant attribute and object knowledge triples.",
+                "score": 0
+            }
+        ]
+    },
+    "Rethinking Visual Token Reduction in LVLMs under Cross-modal Misalignment": {
+        "mc_correct": 0.0,
+        "mc_total": 5,
+        "open_scores": [
+            3,
+            3,
+            2,
+            3,
+            0
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "What are the three specific forms of cross-modal misalignment identified in the paper that undermine text-guided visual token reduction?",
+                "pred_raw": " \n            Three specific forms of cross-modal misalignment identified in the paper that undermine text-guided visual token reduction are:\n            1. Causal misalignment arises from the autoregressive nature of LLMs, where the last text token tends to focus on nearby tokens in the input sequence, introducing local-ity bias in visual token scoring.\n            2. Semantic misalignment emerges as visual and textual tokens become deeply entangled within LLM layers, weakening the distinctiveness and interpretability of textual queries for assessing visual importance.\n            3. Spatial misalignment stems from the flattening of positional embeddings across modalities and the absence of spatial priors in textual inputs.",
+                "pred_parsed": "",
+                "ref": "B",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What is the primary mechanism VisionDrop uses to determine the importance of visual tokens?",
+                "pred_raw": " VisionDrop uses visual self-attention to determine the importance of visual tokens.",
+                "pred_parsed": "",
+                "ref": "D",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "In the VisionDrop framework, what happens to the 'non-dominant' (less important) visual tokens at each stage?",
+                "pred_raw": " \n            \n            The non-dominant tokens are divided into candidate and reference sets, and each candidate to-\nken is matched to its most similar reference token based on a dot-product similarity. The matched tokens are then\nfused to produce enriched contextual tokens.",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "The paper reveals that 'Causal Misalignment' in autoregressive LLMs leads to which specific bias in visual token scoring?",
+                "pred_raw": " \n            \n            The text provides a detailed analysis of causal misalignment in autoregressive LLMs and its impact on visual token scoring. The analysis reveals that causal misalignment arises from the autoregressive nature of LLMs, where the last text token tends to focus on nearby tokens in the input sequence. This leads to a locality bias in visual token scoring, where attention focuses on the bottom of the image. The analysis also explores semantic misalignment, where visual and textual tokens become deeply entangled within LLM layers, weakening the distinctiveness and informativeness of preserving the informative tokens throughout the LLM layers.",
+                "pred_parsed": "",
+                "ref": "B",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "How does VisionDrop affect the inference efficiency of LLaVA-NeXT-7B when retaining only a small fraction of tokens?",
+                "pred_raw": " \n            - Select the option that best describes the impact of VisionDrop on the inference efficiency of LLaV-NeXT-7B when retaining only a small fraction of tokens.",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "Open",
+                "q": "Explain 'Semantic Misalignment' as described in the paper and why it makes text-guided pruning unreliable.",
+                "pred": "\n            Sure, here is the final answer to the question.\n\n**Semantic Misalignment**\n\nSemantic misalignment occurs when the visual and textual representations of a text are not well aligned within the LLM layers. This can happen when the visual and textual tokens are deeply entangled, or when the LLM has difficulty distinguishing between relevant and irrelevant features in the textual representation.\n\nText-guided pruning can amplify this misalignment by discarding visually important regions that are not explicitly emphasized by the textual instruction. This can lead to the pruning of features that are essential for the task, but not explicitly mentioned in the text.",
+                "ref": "Semantic misalignment occurs because visual and textual tokens become deeply entangled as they propagate through the LLM layers. The final instruction token evolves into a hybrid embedding that loses clear semantic alignment with individual visual tokens, making it an unreliable query for identifying visually important regions.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "What is 'Spatial Misalignment' in the context of visual token reduction within LLMs?",
+                "pred": "\n            Sure, here's the answer to the question.\n\nSpatial Misalignment stems from the flattening of positional\nembeddings across modalities and the absence of spatial priors\nin textual inputs. While visual encoders already struggle to align\nspatial structures with textual semantics, this issue worsens in the LLM, where\nvisual and textual tokens are fused into a single sequence.",
+                "ref": "Spatial misalignment stems from flattening 2D visual positional embeddings into a 1D sequence and merging them with text embeddings in the LLM. This dilutes the spatial priors of visual tokens. Furthermore, textual inputs lack inherent spatial awareness, so text-guided pruning may discard spatially important regions not explicitly mentioned in the text.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "Describe the two main components of the VisionDrop framework's stage-wise pruning pipeline.",
+                "pred": " VisionDrop is a training-free framework for visual token reduction. Unlike prior approaches that rely on text-guided relevance, VisionDrop estimates token importance solely from visual self-attention, avoiding dependence on potentially misaligned textual cues.",
+                "ref": "The two main components are: 1) Progressive Dominant Token Selection, which identifies and retains highly informative visual tokens based on visual-only attention scores; and 2) Stage-wise Contextual Token Merging, which aggregates the remaining non-dominant tokens into contextual tokens based on similarity to preserve complementary visual details.",
+                "score": 2
+            },
+            {
+                "type": "Open",
+                "q": "Why is VisionDrop considered a 'training-free' framework?",
+                "pred": " VisionDrop is a training-free framework for visual token reduction due to its ability to preserve critical visual cues under strict token budgets.",
+                "ref": "VisionDrop is considered training-free because it utilizes the existing self-attention maps and weights of the pre-trained LVLM to calculate importance scores and merge tokens. It does not require any additional parameter updates, fine-tuning, or external training data to function.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "In the ablation study concerning visual attention, what was the finding regarding the removal of the causal mask for visual-to-visual attention?",
+                "pred": "",
+                "ref": "The ablation study found that removing the causal mask in visual-to-visual attention (making it bidirectional) achieved comparable or slightly superior performance compared to the default causal setting. This underscores the distinct, inherently bidirectional nature of visual information compared to the sequential nature of language.",
+                "score": 0
+            }
+        ]
+    },
+    "Compression-Aware One-Step Diffusion Model for JPEG Artifact Removal": {
+        "mc_correct": 0.0,
+        "mc_total": 5,
+        "open_scores": [
+            3,
+            2,
+            2,
+            3,
+            3
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "Which of the following best describes the purpose of the CaVE module in CODiff?",
+                "pred_raw": " CaVE module is a compression-aware visual embedder that extracts and leverages JPEG compression priors to guide the diffusion model for JPEG artifact removal.",
+                "pred_parsed": "",
+                "ref": "D",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Why does CODiff introduce a two-stage training strategy?",
+                "pred_raw": " CODiff introduces a two-stage training strategy to decouple compression-aware feature learning and image reconstruction, improving stability and performance.",
+                "pred_parsed": "",
+                "ref": "B",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What is the main reason for incorporating DISTS perceptual loss during the second stage of training?",
+                "pred_raw": " \n            The main reason for incorporating DISTS perceptual loss during the second stage of training is to capture structural and textural details consistent with human perception.",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which of the following statements describes CODiff\u2019s dataset design?",
+                "pred_raw": " CODiff's dataset design is described as:\n             \n             - Dynamically synthesizing compressed images by randomly sampling the JPEG quality factor during training.\n             \n             - Integrating unpaired data with cycle-consistency loss.\n             \n             - Using a compression-aware visual embedder (CaVE) to learn JPEG compression priors.",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What is the objective of introducing LoRA during the second stage of training?",
+                "pred_raw": " \n            The objective of introducing LoRA during the second stage of training is to efficiently adapt large pretrained diffusion models to compression restoration tasks by capturing more nuanced variations in compression artifact, enabling it to differentiate even previously unseen compression levels.",
+                "pred_parsed": "",
+                "ref": "D",
+                "score": 0.0
+            },
+            {
+                "type": "Open",
+                "q": "Explain how CODiff separates \u201cexplicit learning\u201d and \u201cimplicit learning\u201d within the CaVE module and why this design is beneficial.",
+                "pred": " CODiff separates \u201cexplicit learning\u201d and \u201cimplicit learning\u201d within the CaVE module and why this design is beneficial.",
+                "ref": "CODiff uses explicit learning to predict the JPEG quality factor from extracted embeddings, forcing CaVE to encode compression-related cues. Implicit learning reconstructs high-quality images from compressed inputs, encouraging CaVE to model the underlying degradation process. Combining both enables CaVE to learn richer compression priors and generalize to unseen QFs.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "Describe the role of quality factor (QF) estimation in CODiff and how it influences the restoration process.",
+                "pred": " CODiff is a compression-aware one-step diffusion model for JPEG artifact removal. It outperforms recent lead-\ning methods in both quantitative and visual quality metrics.",
+                "ref": "QF estimation allows CODiff to detect the degradation level of the input. This enables the model to adopt different restoration strategies based on compression severity.",
+                "score": 2
+            },
+            {
+                "type": "Open",
+                "q": "Why does CODiff adopt LoRA-based fine-tuning in the second training stage instead of fully finetuning the backbone diffusion model?",
+                "pred": " CODiff adopts LoRA-based fine-tuning in the second training stage instead of fully finetuning the backbone diffusion model because the LoRA loss function provides a better balance between perceptual quality and reconstruction quality.",
+                "ref": "This avoids retraining the full backbone, reduces computational cost, and preserves pre-trained generative priors. It allows model to specialize in JPEG restoration using compression-aware prompts.",
+                "score": 2
+            },
+            {
+                "type": "Open",
+                "q": "What problem does CODiff attempt to solve in traditional diffusion-based restoration approaches, and what architectural design choices contribute to solving it?",
+                "pred": " CODiff is a one-step diffusion model designed for efficient JPEG artifact removal. Its architecture incorporates a compression-aware visual embedder to guide the denoising process, resulting in high-quality artifact removal while preserving fine-grained details.",
+                "ref": "Traditional diffusion models rely on multi-step denoising, which is slow and often fails on heavily compressed images. CODiff introduces a one-step diffusion architecture and compression-aware embeddings to reduce computational cost while improving robustness to severe compression artifacts.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "Discuss the limitations of optimizing only pixel-level losses (e.g., L1, L2) in image restoration, and how CODiff addresses these limitations in its training pipeline.",
+                "pred": "\n            - Write a concise summary of the limitations of optimizing only pixel-level losses and how CODiff addresses these limitations.",
+                "ref": "Pixel-level losses encourage smooth outputs and fail to preserve perceptual details such as texture and structure. CODiff incorporates DISTS for perceptual similarity and GAN loss for realism, enabling reconstruction that is visually natural rather than just numerically accurate.",
+                "score": 3
+            }
+        ]
+    },
+    "Reversing the Damage: A QP-Aware Transformer-Diffusion Approach for 8K Video Restoration under Codec Compression": {
+        "mc_correct": 0.0,
+        "mc_total": 5,
+        "open_scores": [
+            3,
+            3,
+            3,
+            2,
+            0
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "What is the primary motivation behind introducing a Quality Prior (QP) into the diffusion model in DiQP?",
+                "pred_raw": " Briefly explain the primary motivation behind introducing a Quality Prior (QP) into the diffusion model in DiQP.",
+                "pred_parsed": "",
+                "ref": "A",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which component in DiQP is responsible for injecting conditional information such as patch location and compression level into the restoration network?",
+                "pred_raw": " \n            The component in DiQP responsible for injecting conditional information such as patch location and compression level into the restoration network is the U-shaped Transformer Encoder.",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Why does DiQP introduce a Weight Decay Factor (WDF) in the Look Ahead module?",
+                "pred_raw": " \n            The weight decay factor (WDF) introduced in the Look Ahead module of DiQP serves to control the influence of the Look Ahead model on the decoder's restoration abilities.",
+                "pred_parsed": "",
+                "ref": "B",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What is the primary role of the Look Around module in DiQP?",
+                "pred_raw": " (Choose one option from the given choices)\n            The primary role of the Look Around module in DiQP is to:\n            A. To fuse optical flow features from neighboring frames\n            B. To directly upscale degraded patches to higher resolution\n            C. To perform adversarial discrimination during training\n            D. To estimate temporal motion between frame sequences",
+                "pred_parsed": "A",
+                "ref": "E",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "How does the Look Ahead module improve temporal restoration in DiQP?",
+                "pred_raw": "\n\n            The Look Ahead module improves temporal restoration in DiQP by computing optical flow and compensating motion errors to better align the input frames.",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "Open",
+                "q": "Why does DiQP directly model codec compression artifacts as the noise to be removed, instead of adding synthetic Gaussian noise like conventional diffusion models?",
+                "pred": "\n            - Write a clear and concise summary of the information provided.",
+                "ref": "Because real compression artifacts are highly structured and non-Gaussian. By treating codec artifacts as the actual noise source, the model learns to reverse real-world degradation patterns instead of denoising idealized noise distributions.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "What restoration challenge does the Look Ahead module address in DiQP when dealing with compressed videos?",
+                "pred": "\n            - Write a concise summary of the restoration challenge addressed by the Look Ahead module in DiQP.",
+                "ref": "Look Ahead mitigates missing temporal cues by extracting future-frame features, allowing the model to anticipate motion and structural changes, which improves restoration of fine details without relying on computationally expensive optical flow.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "Why does DiQP train using fixed Quantization Parameters (QPs) instead of variable compression levels?",
+                "pred": " DiQP uses fixed Quantization Parameters (QPs) instead of variable compression levels because it addresses complex compression artifacts by leveraging the inherent noise introduced during compression.",
+                "ref": "Using fixed QPs allows the model to learn stable representations of specific compression levels, which helps ensure robustness and predictable behavior across different types of codec-induced degradation.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "What evidence shows DiQP outperforms previous models?",
+                "pred": "\n            Sure, here's the answer to the question:\n\nDiQP outperforms previous models due to its ability to leverage the additional information available in less compressed videos. This is evident from the significant margin of performance improvement observed at lower QPs, where DiQP achieves a notably stronger performance advantage.",
+                "ref": "It achieves higher PSNR and SSIM and produces cleaner textures compared to baseline methods.",
+                "score": 2
+            },
+            {
+                "type": "Open",
+                "q": "What is a major limitation of DiQP?",
+                "pred": "",
+                "ref": "Its conditioning mechanism is resolution-specific and difficult to generalize beyond 8K.",
+                "score": 0
+            }
+        ]
+    },
+    "PromptCIR: Blind Compressed Image Restoration with Prompt Learning": {
+        "mc_correct": 0.0,
+        "mc_total": 5,
+        "open_scores": [
+            3,
+            3,
+            2,
+            3,
+            3
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "What mechanism is used in DPM to compute weights for combining prompt bases?",
+                "pred_raw": " \n            The mechanism used in DPM to compute weights for combining prompt bases is **DPM's mixture-of-experts prompt**.",
+                "pred_parsed": "",
+                "ref": "D",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which training dataset significantly boosts the performance of PromptCIR?",
+                "pred_raw": " DF2K achieves significantly better performance than other datasets on the scale of the training dataset.",
+                "pred_parsed": "",
+                "ref": "D",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which compression artifact does PromptCIR specifically target when improving local modeling ability?",
+                "pred_raw": " PromptCIR specifically targets JPEG 8\u00d78 blocking artifacts when improving local modeling ability.",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Compared to PromptIR, why does PromptCIR achieve better performance on high-resolution benchmarks?",
+                "pred_raw": " PromptCIR achieves better performance on high-resolution benchmarks than PromptIR due to its ability to model content-aware information through large-scale training and the use of a deep backbone network.",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What is the primary role of multiple prompt bases in the Dynamic Prompt Module (DPM) of PromptCIR?",
+                "pred_raw": "\n\n            What is the primary role of multiple prompt bases in the Dynamic Prompt Module (DPM) of PromptCIR?",
+                "pred_parsed": "",
+                "ref": "A",
+                "score": 0.0
+            },
+            {
+                "type": "Open",
+                "q": "Why does PromptCIR avoid predicting numerical quality factors like previous blind CIR methods?",
+                "pred": " PromptCIR is a novel approach to blind CIR that uses prompt learning to encode compression information implicitly through the interaction between prompt components.",
+                "ref": "Because numerical QF lacks spatial information, which prevents content-aware adaptability and requires extra predictor networks with high parameter overhead.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "Why does PromptCIR apply RHAG only in the first two stages of the network?",
+                "pred": " PromptCIR applies RHAG only in the first two stages of the network.",
+                "ref": "Because deeper stages have low spatial resolution where window shifting is ineffective, and global modeling becomes more important than local structures.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "What is the purpose of the two-stage training strategy in PromptCIR?",
+                "pred": " Briefly summarize the purpose of the two-stage training strategy in PromptCIR.",
+                "ref": "Stage one focuses on learning content-aware features from fixed QFs; stage two strengthens distortion-aware abilities via random QFs.",
+                "score": 2
+            },
+            {
+                "type": "Open",
+                "q": "What role does RHAG play in improving restoration performance?",
+                "pred": "\n            Sure, I can help you with that. Here's the answer to your question:\n\n**The role of RHAG in improving restoration performance is that it enhances the representation ability of the network by combining several hybrid attention blocks with an overlapped cross-attention block (OCAB) followed by one convolution. This design enhances the representation capabilities of the network in both local and global information extraction, and highly meets the needs for blind CIR.**",
+                "ref": "RHAG enhances both local and global feature representations, helping the model effectively recover texture details and remove compression artifacts such as blocking.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "What role does dynamic prompts play in enabling PromptCIR to handle images compressed with unknown quality factors?",
+                "pred": "\n            - Write a clear and concise final answer to the question.",
+                "ref": "Dynamic prompts encode implicit degradation priors that capture both content-aware and distortion-aware information without estimating a numerical quality factor. By generating spatially adaptive prompt representations from image features, PromptCIR can modulate restoration behavior according to local compression severity, enabling effective blind restoration across a wide range of unseen quality levels.",
+                "score": 3
+            }
+        ]
+    },
+    "MoE-DiffIR: Task-customized Diffusion Priors for Universal Compressed Image Restoration": {
+        "mc_correct": 0.0,
+        "mc_total": 5,
+        "open_scores": [
+            3,
+            2,
+            2,
+            3,
+            3
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "What is the main purpose of the MoE-Prompt Module in MoE-DiffIR?",
+                "pred_raw": " MoE-Prompt Module is a method that aims to extract multi-scale features to interact with the prompt, enabling it to collaborate with different distortion tasks.",
+                "pred_parsed": "",
+                "ref": "E",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Why do traditional multiple-prompt approaches often perform poorly in multi-task CIR settings?",
+                "pred_raw": " Briefly explain why traditional multiple-prompt approaches often perform poorly in multi-task CIR settings.",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What role does the Visual2Text Adapter play in MoE-DiffIR?",
+                "pred_raw": " Visual2Text Adapter plays a crucial role in MoE-DiffIR by integrating visual information into the text inputs of the Stable Diffusion model, enabling better perceptual restoration capabilities at low bitrates.",
+                "pred_parsed": "",
+                "ref": "B",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which statement best describes the routing mechanism used in MoE-Prompt?",
+                "pred_raw": " Briefly explain the routing mechanism used in MoE-Prompt based on the given context.",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Why does increasing the number of prompts beyond a certain threshold degrade performance?",
+                "pred_raw": " \n            The effects of increasing the number of prompts beyond a certain threshold degrade performance because the router cannot compute scores for many prompts.",
+                "pred_parsed": "",
+                "ref": "B",
+                "score": 0.0
+            },
+            {
+                "type": "Open",
+                "q": "Why did previous diffusion-based CIR models set the text prompt as empty, and why does MoE-DiffIR change this approach?",
+                "pred": "",
+                "ref": "Previous methods assumed text conditioning was unnecessary for image restoration and therefore set the prompt to empty. MoE-DiffIR argues that Stable Diffusion contains strong text-to-image priors that can improve perceptual quality, especially under low bitrate, so it converts visual features into textual embeddings to exploit these priors.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "Describe the motivation and function of the Decoder Compensator.",
+                "pred": " Provide a clear and concise summary of the motivation and function of the Decoder Compensator.",
+                "ref": "The pre-trained VAE decoder is designed for natural images and mismatches the latent distribution of compressed images, causing artifacts such as color shifts. The Decoder Compensator is trained to inject additional low-quality image information and align output distributions, improving fidelity and perceptual consistency.",
+                "score": 2
+            },
+            {
+                "type": "Open",
+                "q": "Summarize the two-stage training procedure used in MoE-DiffIR.",
+                "pred": "\n            Sure, I can help you with that. Here's the answer to the question:\n\n**Sure, I can help you with that.**\n\n**The two-stage training procedure used in MoE-DiffIR involves a pre-training stage and a fine-tuning stage.**\n\n**In the first stage, the MoE-Prompt Module is trained to extract task-customized diffusion priors for each CIR task.**\n\n**In the second stage, the (d) Decoder Compensator is fine-tuned for structural correction.**",
+                "ref": "Stage 1: Train MoE-Prompt and Visual2Text Adapter while freezing the VAE decoder, using diffusion loss to learn task-specific priors. Stage 2: Freeze other modules and train only the Decoder Compensator with LPIPS loss, aligning reconstructed outputs with high-quality images.",
+                "score": 2
+            },
+            {
+                "type": "Open",
+                "q": "Why is a dynamic prompt mechanism superior to single-prompt or multi-prompt weighting approaches in universal CIR?",
+                "pred": "\n            - Write a concise summary of the information in the retrieved notes.",
+                "ref": "A dynamic prompt mechanism only activates the most relevant prompts for each distortion, enabling specialization. It avoids forcing a single prompt to represent all artifacts and prevents all prompts from learning similar features, resulting in more diverse and effective representations across different codecs and bitrates.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "What is the purpose of building a universal CIR dataset with 21 degradation types, and how does it benefit MoE-DiffIR?",
+                "pred": "",
+                "ref": "The universal dataset provides diverse distortion settings, including seven codecs with three bitrate levels each. This allows MoE-DiffIR to learn task-customized priors for a wide range of degradation types, improving generalization and robustness. It also offers a standard benchmark for evaluating multi-codec CIR performance.",
+                "score": 3
+            }
+        ]
+    },
+    "DriftRec: Adapting diffusion models to blind JPEG restoration": {
+        "mc_correct": 0.0,
+        "mc_total": 5,
+        "open_scores": [
+            3,
+            3,
+            1,
+            3,
+            3
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "What is the primary purpose of DriftRec\u2019s modified forward process?",
+                "pred_raw": " DriftRec\u2019s modified forward process is designed to generate realistic and difficult scenarios such as unaligned double JPEG compression and blind restoration of JPEGs found online, without having encountered such examples during training.",
+                "pred_parsed": "",
+                "ref": "D",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Why can DriftRec train efficiently without repeatedly simulating the forward process?",
+                "pred_raw": " DriftRec is an efficient method for training diffusion models without repeatedly simulating the forward process. Its forward process allows direct sampling of intermediate states at any time, enabling efficient generation of realistic and difficult scenarios such as unaligned double JPEG compression and blind restoration of JPEGs found online.",
+                "pred_parsed": "",
+                "ref": "B",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Why does DriftRec sometimes produce overly textured results on heavily degraded inputs?",
+                "pred_raw": " DriftRec sometimes produces overly textured results on heavily degraded inputs due to the following reasons:\n             \n             - The network implicitly assumes that the clean image x0 and the corrupted image y are reasonably similar to each other, so that performing per-pixel interpolation between them through the diffusion process \u2013 see Eqs. (7) and (8) \u2013 is sensible. While single JPEG compression at medium-to-high QF should generally fulfill this, extreme corruptions such as QFs less than 5 lead to large per-pixel distances between x0 and y, and we found DriftRec to generate significant artifacts in these scenarios.",
+                "pred_parsed": "",
+                "ref": "A",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What explains DriftRec\u2019s strong performance on unaligned double JPEG compression without explicit training on that setting?",
+                "pred_raw": " DriftRec achieves strong performance on unaligned double JPEG compression without explicit training on that setting.",
+                "pred_parsed": "",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which evaluation result best supports DriftRec\u2019s ability to model the true clean image distribution?",
+                "pred_raw": " DriftRec achieves the best perceptual quality with a margin but does not improve PSNR over the compressed images on average.",
+                "pred_parsed": "",
+                "ref": "D",
+                "score": 0.0
+            },
+            {
+                "type": "Open",
+                "q": "Why does DriftRec achieve high perceptual quality even when PSNR and SSIM do not improve?",
+                "pred": " DriftRec achieves high perceptual quality even when PSNR and SSIM do not improve because of the generative and probabilistic nature of the method.",
+                "ref": "Because it prioritizes generating plausible high-frequency textures that improve perceptual realism rather than matching ground-truth pixels exactly.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "What aspect of DriftRec enables it to operate in a fully blind restoration setting?",
+                "pred": " DriftRec enables the operation of a fully blind restoration setting by allowing the model to operate without any information about the specific JPEG compression settings.",
+                "ref": "It does not require knowledge of the compression parameters or operator; instead, it learns to restore images directly from corrupted inputs.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "How does DriftRec differ from conditional diffusion models that treat the corrupted image only as conditioning information?",
+                "pred": " DriftRec is a novel approach to blind JPEG restoration that does not require the underlying corruption operator to be known, linear, or from a continuous family of operators. Instead, it requires only a dataset of (clean image, corrupted image) pairs.",
+                "ref": "Conditional diffusion models start from pure noise and use the corrupted image only as a conditioning signal, while DriftRec adapts the forward process so its final distribution already matches a noisy corrupted image. This places the reverse process near the target distribution from the start, leading to more efficient and realistic reconstruction.",
+                "score": 1
+            },
+            {
+                "type": "Open",
+                "q": "Why is DriftRec slower at inference time than traditional regression-based methods?",
+                "pred": " DriftRec is slower at inference time than traditional regression-based methods because it requires a flexible sampling procedure that depends on the specific diffusion model and the chosen sampling parameters.",
+                "ref": "Because it requires many iterative neural network evaluations during reverse diffusion, rather than a single forward pass.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "Why is DriftRec considered more training-efficient than methods that rely on multiple specialized models for different JPEG quality levels?",
+                "pred": " DriftRec is considered more training-efficient than methods that rely on multiple specialized models for different JPEG quality levels because it naturally generates a more generalizable model that can adapt to more complex restoration tasks.",
+                "ref": "DriftRec is trained as a single blind model across all quality factors rather than separate models for each QF, allowing it to learn a unified restoration strategy that generalizes to varied degradations without additional training cost or specialized architectures.",
+                "score": 3
+            }
+        ]
+    }
+}

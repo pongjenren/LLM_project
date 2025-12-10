@@ -1,0 +1,882 @@
+{
+    "LION: Empowering Multimodal Large Language Model with Dual-Level Visual Knowledge": {
+        "mc_correct": 3.0,
+        "mc_total": 5,
+        "open_scores": [
+            4,
+            4,
+            4,
+            4,
+            4
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "What are the two specific levels of visual knowledge that the LION model aims to inject into the Multimodal Large Language Model (MLLM)?",
+                "pred_raw": "B. Fine-grained spatial-aware visual knowledge and High-level semantic visual evidence\n            \n            Note: The assistant is not allowed to provide any other explanation or description. The answer should be provided in the exact format as requested.",
+                "pred_parsed": "B",
+                "ref": "B",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What is the primary function of the 'Vision Aggregator' module introduced in the LION architecture?",
+                "pred_raw": "A. To replace the original Q-Former and compress visual features into a single token.",
+                "pred_parsed": "A",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Why does LION employ a 'stage-wise instruction-tuning strategy' instead of a single-stage training process?",
+                "pred_raw": "B. To alleviate the internal conflict between image-level tasks (e.g., captioning) and region-level tasks (e.g., visual grounding)            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```            \n            ```python\n            ```",
+                "pred_parsed": "B",
+                "ref": "B",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which mechanism does LION use to incorporate high-level semantic visual evidence (image tags) while mitigating the influence of imperfect predictions?",
+                "pred_raw": "C. A Soft Prompting method that embeds a learnable token into the instruction template",
+                "pred_parsed": "A",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "On which benchmark did LION demonstrate a significant ability to alleviate object hallucination compared to models like InstructBLIP and Shikra?",
+                "pred_raw": "A. POPE (Polling on Object Existence)            \n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````",
+                "pred_parsed": "A",
+                "ref": "A",
+                "score": 1.0
+            },
+            {
+                "type": "Open",
+                "q": "What is the main limitation of existing MLLMs (like InstructBLIP) that LION attempts to address regarding their vision encoders?",
+                "pred": "The main limitation of existing MLLMs (like InstructBLIP) that LION attempts to address regarding their vision encoders is the insufficient extraction and reasoning of visual knowledge. According to [LION Empowering Multimodal Large Language Model with Dual-Level Visual Knowledge / chunk 6], this limitation has become a central obstacle impeding the development of MLLMs. The paper highlights that most existing MLLMs mainly adopt vision encoders pretrained on coarsely aligned image-text pairs, leading to insufficient extraction and reasoning of visual knowledge. LION aims to address this issue by incorporating dual-level visual knowledge into MLLMs.",
+                "ref": "Most existing MLLMs primarily adopt vision encoders pretrained on coarsely aligned image-text pairs (image-level supervision). This leads to insufficient extraction and reasoning of visual knowledge, causing the models to possess limited image understanding capabilities and often resulting in erroneous or hallucinated responses.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "Describe the structure and purpose of the 'Mixture-of-Adapters' with a Router in the LION model.",
+                "pred": "The structure of the 'Mixture-of-Adapters' with a Router in the LION model is as follows: The Mixture-of-Adapters is a module that is inserted at each FFN layer in a parallel manner. Each adapter is treated as an expert, and a router module is used to dynamically aggregate the hidden features from the main branches and the multiple adapter branches according to task types. The router function Rt generates new hidden features for each kind of task t, which can be formulated as Ot = F(X) + KXk=1Gt k \u2299 Hk(X). This progressive incorporation of fine-grained visual knowledge contributes to the mutual promotion between image-level and region-level visual tasks. The Mixture-of-Adapters with a router is used to dynamically fuse visual information across various granularities in a unified MLLM, which is depicted in Fig. 3. The purpose of the Mixture-of-Adapters with a router is to avoid the potential interference between different adapters and to dynamically aggregate the hidden features according to task types. This is achieved by using a router module to generate new hidden features for each kind of task t. The Mixture-of-Adapters with a router is a key component of the LION model, which enables the model to excel in capturing fine-grained visual information and performing spatial reasoning.",
+                "ref": "The Mixture-of-Adapters is used in the third stage of instruction-tuning to combine image-level and region-level capabilities. It treats different adapters (Image-Level Adapter and Region-Level Adapter) as experts. A router module dynamically aggregates hidden features from these adapter branches based on the specific task type (image-level VL tasks or fine-grained visual grounding tasks) to avoid interference and maximize complementarity.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "How does the LION model utilize the Recognize Anything Model (RAM)?",
+                "pred": "The LION model utilizes the Recognize Anything Model (RAM) to incorporate image tags as high-level semantic visual evidence. The image tags are generated by using a 384 \u00d7 384 image size and a 0.8 threshold across 4585 categories in the RAM tag list. The RAM model is based on the backbone Swin- Large. All other hyperparameters are set the same as in the RAM codebase.",
+                "ref": "LION uses the off-the-shelf Recognize Anything Model (RAM) to extract high-level semantic knowledge in the form of image tags (encompassing objects, scenes, actions, and attributes). These tags serve as supplementary visual evidence to support comprehensive visual perception and are integrated into the model using a soft prompting method.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "According to the paper, what specific layers of the vision encoder does the Vision Aggregator use as input, and why?",
+                "pred": "The Vision Aggregator uses the hidden features from the middle layers of the vision encoder as input. Specifically, it uses the hidden features {Vi, Vj, Vk} from the layers i = L \u2212 1, j = 2L/3, k = L/3 in the vision encoder. This is stated in the paper [LION Empowering Multimodal Large Language Model with Dual-Level Visual Knowledge / chunk 29]. The Vision Aggregator uses these layers because they learn visual information at different scales, with lower layers learning visual details. The Vision Aggregator makes fine-grained spatial-aware visual knowledge more likely to be learned based on visual grounding tasks.",
+                "ref": "The Vision Aggregator uses hidden features from middle layers of the vision encoder, specifically layers at indices L-1, 2L/3, and L/3 (where L is the total number of layers). This is done because different transformer layers learn visual information at different scales, and aggregating these multi-level features helps the model better capture visual details required for fine-grained spatial awareness.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "What were the findings of the ablation study regarding the removal of the Vision Aggregator?",
+                "pred": "The findings of the ablation study regarding the removal of the Vision Aggregator are that it degrades REC performances. This is illustrated in Fig. 6 of [LION Empowering Multimodal Large Language Model with Dual-Level Visual Knowledge / chunk 46]. The removal of the vision aggregator also leads to a decrease in performance, as shown in the results of different component combinations of our method in Figure 6(a) of [Rethinking Visual Token Reduction in LVLMs under Cross- modal Misalignment / chunk 49]. Additionally, the ablation study in [Rethinking Visual Token Reduction in LVLMs under Cross-modal Misalignment / chunk 78] shows that the removal of the visual causal attention leads to a decrease in performance under different token retention rates. Overall, the ablation study suggests that the vision aggregator is an important component that contributes positively to the performance of the model.",
+                "ref": "The ablation study showed that removing the Vision Aggregator resulted in a degradation of performance on Referring Expression Comprehension (REC) tasks. This validates that aggregating multi-level vision features via the Vision Aggregator effectively promotes the extraction of fine-grained spatial-aware visual knowledge.",
+                "score": 4
+            }
+        ]
+    },
+    "LLM-Check: Investigating Detection of Hallucinations in Large Language Models": {
+        "mc_correct": 2.0,
+        "mc_total": 5,
+        "open_scores": [
+            1,
+            4,
+            4,
+            4,
+            4
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "Which specific metrics does the proposed LLM-Check method utilize to detect hallucinations within a single model response?",
+                "pred_raw": "B. Internal hidden representations, attention similarity maps, and output prediction probabilities\n            \n            Please confirm if the answer is correct or not. If not, please provide the correct answer.",
+                "pred_parsed": "B",
+                "ref": "B",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "According to the experimental results, what is the observed speedup of LLM-Check compared to other baselines?",
+                "pred_raw": "C. It achieves speedups of up to 45x and 450x",
+                "pred_parsed": "C",
+                "ref": "C",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "How is the 'Attention Score' in LLM-Check mathematically derived?",
+                "pred_raw": "B. By computing the cosine similarity between the query and key vectors\n            \n            Please let me know if you need further assistance.",
+                "pred_parsed": "B",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "In the 'black-box' setting where the original LLM is inaccessible, how does LLM-Check perform detection?",
+                "pred_raw": "A. It relies solely on the output text string without any probability data\n```\n\nPlease provide the answer in the following format WITHOUT ANY OTHER EXPLANATION OR DESCRIPTION.\n\nFinal Answer: A. It relies solely on the output text string without any probability data\n```\nFinal Answer: A. It relies solely on the output text string without any probability data\n``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final Answer: A. It relies solely on the output text string without any probability data ``` ``` Final",
+                "pred_parsed": "A",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which dataset was used to analyze the performance of LLM-Check on fine-grained hallucination types such as 'entity', 'relation', and 'invented'?",
+                "pred_raw": "B. RAGTruth\n            \n            End of note.",
+                "pred_parsed": "B",
+                "ref": "E",
+                "score": 0.0
+            },
+            {
+                "type": "Open",
+                "q": "Explain the difference between the 'Hidden Score' calculation in LLM-Check and the approach used by INSIDE.",
+                "pred": "The 'Hidden Score' calculation in LLM-Check and the approach used by INSIDE differ in that the latter measures the self-consistency of the hidden states across multiple independent responses of an LLM, by performing a centered eigen-analysis of the covariance matrix of these hidden states. In contrast, LLM-Check uses the mean log-determinant of \u03a32, which is termed as 'Hidden Score'. [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93] [94] [95] [96] [97] [98] [99] [100] [101] [102] [103] [104] [105] [106] [107] [108] [109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120] [121] [122] [123] [124] [125] [126] [127] [128] [129] [130] [131] [132] [133] [134] [135] [136] [137] [138] [139] [140] [141] [142] [143] [",
+                "ref": "LLM-Check computes the Hidden Score by calculating the mean log-determinant of the covariance matrix of hidden representations for a single response (sample-level), whereas INSIDE computes the centered covariance matrix across multiple independent responses to check for self-consistency at a population level.",
+                "score": 1
+            },
+            {
+                "type": "Open",
+                "q": "What is the rationale behind using the 'Windowed Logit Entropy score' instead of a standard length-averaged entropy score?",
+                "pred": "The rationale behind using the 'Windowed Logit Entropy score' instead of a standard length-averaged entropy score is that the entire sentence may not be hallucinatory, and the length-average scores may not be as salient as we desire to predict hallucinations accurately. The Windowed Logit Entropy score computes the logit entropy scores across overlapping token windows and returns the logit entropy of the window with the maximum score, making it sensitive to short sequences of hallucinatory material and not diluted by sequence length normalization. This is mentioned in [LLM-Check Investigating Detection of Hallucinations in Large Language Models / chunk 42].",
+                "ref": "Standard length-averaged scores might dilute the signal of short hallucinatory sequences within a longer text. The Windowed Logit Entropy score computes entropy across overlapping windows and takes the maximum, making it sensitive to specific short spans of hallucinatory material.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "What qualitative difference in log-eigenvalues did the authors observe between hallucinatory and truthful responses when visualizing the Attention Scores?",
+                "pred": "The authors observed a qualitative difference in log-eigenvalues between hallucinatory and truthful responses when visualizing the Attention Scores. Specifically, they found that the log-eigenvalues of the Hallucinated response were consistently larger in value than those of the truthful response, indicating the presence of hallucinated text. This is evident from Figure-4, which visualizes the cumulative difference in log Kerjj values between the Hallucinated Sample and Truthful sample, and from Table 6, which shows that the overall mean log Kerjj computed over different attention heads is consistently larger for Hallucinated Sample Tokens. (Refer to [LLM-Check Investigating Detection of Hallucinations in Large Language Models / chunk 92, 93, 94])",
+                "ref": "The authors observed that the log-eigenvalues (specifically the diagonal values of the log-kernel) for hallucinated responses were consistently larger than those for truthful responses, indicating that the model's latent representations are sensitive to the presence of hallucinations.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "Why does LLM-Check advocate for using a single model response for detection rather than consistency-based methods like SelfCheckGPT?",
+                "pred": "LLM-Check advocates for using a single model response for detection rather than consistency-based methods like SelfCheckGPT because it provides better detection performance over all three metrics of AUC-PR, Accuracy and TPR@5%FPR, as seen in Table-3, despite not utilizing the additional model responses included in the dataset. This is demonstrated in the paper, and the results show that LLM-Check performs better than SelfCheckGPT-Prompt as well.",
+                "ref": "Consistency-based methods like SelfCheckGPT require generating multiple additional responses at inference time, which induces significant computational overheads and costs. LLM-Check aims to be efficient and applicable in real-time by analyzing only the single generated response.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "What does the 'Hidden Score' theoretically capture regarding the model's internal state?",
+                "pred": "The 'Hidden Score' theoretically captures the internal state of the model by analyzing the mean log-determinant of \u03a32, which is the covariance matrix of the hidden representations. This is done to remove the explicit dependence on input-length and to capture the differences in model sensitivity to hallucinated or truthful information. According to [LLM-Check Investigating Detection of Hallucinations in Large Language Models / chunk 35], the Hidden Score is computed as 2 m Pm i=1 log \u03c3i, where \u03c3i are the singular values of H. This is an alternative approach to INSIDE, which measures self-consistency of hidden states across multiple independent responses of an LLM by performing a centered eigen-analysis of the covariance matrix of these hidden states.",
+                "ref": "The Hidden Score uses eigen-analysis (singular values) to capture the interaction in latent space between different token representations. It posits that the variations in these representations differ between truthful and hallucinatory sequences due to the model's sensitivity to grounded facts encountered during training.",
+                "score": 4
+            }
+        ]
+    },
+    "Interleaved-Modal Chain-of-Thought": {
+        "mc_correct": 3.0,
+        "mc_total": 5,
+        "open_scores": [
+            4,
+            4,
+            4,
+            4,
+            4
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "What is the primary limitation of existing multimodal Chain-of-Thought (CoT) methods that the proposed ICoT aims to address?",
+                "pred_raw": "B. They rely on text-only rationales which struggle to express fine-grained associations with the original image.",
+                "pred_parsed": "B",
+                "ref": "B",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What does the abbreviation ADS stand for in the context of the proposed framework?",
+                "pred_raw": "B. Adaptive Decoding Strategy\n            \n            Explanation: None\n            \n            Confidence: 99%            \n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````",
+                "pred_parsed": "B",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which two Vision-Language Models (VLMs) were used to implement and evaluate the ICoT method in this paper?",
+                "pred_raw": "A. GPT-4V and Claude 3 Opus\n            \n            END\n            \n            \"\"\"\n            # Check if the answer is correct\n            if answer == \"A. GPT-4V and Claude 3 Opus\":\n                print(\"Correct!\")\n            else:\n                print(\"Incorrect. The correct answer is A. GPT-4V and Claude 3 Opus.\")\n        except Exception as e:\n            print(f\"An error occurred: {e}\")\n    # Run the function\n    main()\n    \"\"\"\n    This code defines a function `main()` that simulates a conversation with the user. It prompts the user to ask a question and then provides the answer based on the given notes. The answer is retrieved from the notes by searching for the relevant keywords. If the answer is correct, it prints \"Correct!\" otherwise, it prints \"Incorrect. The correct answer is [answer]\". If an error occurs during the execution of the function, it prints the error message. The function is then run by calling `main()`.",
+                "pred_parsed": "A",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "How does the Attention-driven Selection (ADS) strategy determine which visual patches to insert into the rationale?",
+                "pred_raw": "C. It utilizes the attention map of the signal token across VLM layers to identify optimal patches.",
+                "pred_parsed": "C",
+                "ref": "C",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What was the observed result when attempting to realize ICoT by copying the Key-Value (KV) Cache of visual tokens instead of providing them at the input end?",
+                "pred_raw": "B. It caused performance degradation because the position information became insensitive.            \n            ````\n            \"\"\"\n\n\n\n```python\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport plotly.express as px\nimport plotly.graph_objects as go\nimport plotly.io as pio\npio.renderers.default = 'browser'\n\n# Load the data\ndata = pd.read_csv('data.csv')\n\n# Filter the data\nfiltered_data = data[(data['A'] == 'B') & (data['C'] == 'D')]\n\n# Create a bar chart\nfig = px.bar(filtered_data, x='E', y='F', title='Bar Chart')\n\n# Show the plot\nfig.show()\n```\n\nThis code is a simple example of how to use the `plotly` library to create a bar chart. It loads a CSV file, filters the data, and then creates a bar chart using the `px.bar` function. The chart is then displayed using the `fig.show()` method.\n\nIn this case, the answer is B. It caused performance degradation because the position information became insensitive.",
+                "pred_parsed": "B",
+                "ref": "B",
+                "score": 1.0
+            },
+            {
+                "type": "Open",
+                "q": "Explain the core concept of Interleaved-modal Chain-of-Thought (ICoT) and how it differs from traditional multimodal CoT.",
+                "pred": "The core concept of Interleaved-Modal Chain-of-Thought (ICoT) is that it differs from traditional multimodal CoT by incorporating multimodal intermediate reasoning steps, each consisting of paired images and textual rationales, to elicit vision-language models (VLMs) to generate fine-grained associations with the original image. This is in contrast to traditional multimodal CoT methods that generate text-only rationales, which struggle to express fine-grained associations with the original image. According to the paper, ICoT is more reasonable in intuition and effect than other multimodal CoT methods, such as plainly inserted scene graphs (CCoT) and deconstructed sub-questions (DDoT). The performance gains of ICoT further demonstrate the advantages of interleaved-modal rationales in inferring the final answer effectively.",
+                "ref": "ICoT generates sequential reasoning steps consisting of paired visual and textual rationales (interleaved-modal) to infer the final answer. This differs from traditional multimodal CoT, which typically generates text-only rationales that often struggle to express fine-grained associations with the original image.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "Describe the Attention-driven Selection (ADS) strategy and its primary advantages as proposed in the paper.",
+                "pred": "The Attention-Driven Selection (ADS) strategy is proposed to realize Interleaved-Modal Chain-of-Thought (ICoT). The primary advantages of ADS are that it allows VLMs to select patches from the input image rather than generating extra images, and it utilizes the attention map of VLMs to identify optimal patches from the input image as fine-grained visual rationales. ADS inserts a piece of visual tokens of selected patches from the input image to refine the generation of the following textual rationale. This strategy is training-free and can be plugged into existing VLMs. According to the paper, ADS brings VLMs with substantial performance gains (up to 14%) compared with current multimodal CoT methods.",
+                "ref": "ADS is a strategy that signals VLMs to select specific patches (visual tokens) from the input image to insert into the reasoning chain, rather than generating new images. It uses the VLM's attention map to identify relevant regions. Its main advantages are that it is a plug-and-play strategy, does not require parameterization (training-free), and introduces ignorable additional latency.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "In the ablation study, what was the impact of removing the Fine-grained Visual Information (FVI) from the demonstrations (i.e., using randomly sampled patches)?",
+                "pred": "The impact of removing the Fine-Grained Visual Information (FVI) from the demonstrations (i.e., using randomly sampled patches) was significant. The results indicate that both ADS and fine-grained visual information (FVI) incorporated in the demonstration are necessary. When substituting ICoT demonstrations with normal ones (w/o FVI), the performance degradation proves the fact that fine-grained visual information in demonstrations effectively guides VLMs to think in this format. This is attributed to the ScienceQA dataset being relatively easier than others since both M3CoT and the answers of LLaV A-W highly rely on the fine-grained visual information of an image. Therefore, our proposed ICoT has the potential to solve complex vision-language tasks.",
+                "ref": "Removing Fine-grained Visual Information (FVI) and replacing it with randomly sampled patches in the demonstrations resulted in performance degradation. This proves that high-quality, relevant visual information in the demonstrations is necessary to effectively guide the VLM to think in the ICoT format.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "Based on the case studies, what are the three typical problems in text-only rationales that ICoT helps to resolve?",
+                "pred": "The three typical problems in text-only rationales that ICoT helps to resolve are:\n            1. Misunderstanding: According to the case studies presented in the paper, ICoT helps to resolve the problem of misunderstanding by facilitating the generation of fine-grained associations with the origin image.\n            2. Overgeneralization: ICoT also helps to resolve the problem of overgeneralization by providing a more nuanced understanding of the image and the task.\n            3. Hallucination: Finally, ICoT helps to resolve the problem of hallucination by ensuring that the generated rationales are grounded in the image and the task.\n\n            Note: The answer is based on the information provided in the retrieved notes and may not be a comprehensive answer to the question.",
+                "ref": "The case studies demonstrate that ICoT helps resolve three typical problems found in text-only rationales: Misunderstanding (e.g., misidentifying objects), Overgeneralization (e.g., inferring a kite festival from a single kite), and Hallucination (e.g., imagining objects or details not present in the image).",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "What are the limitations of the current ICoT implementation mentioned in the conclusion?",
+                "pred": "The limitations of the current ICoT implementation mentioned in the conclusion are the patch selection in ADS requiring storing attention scores, which brings additional memory overhead, and the fixed number of selected patches in the ADS design is sub-optimal, resulting in unexpected outputs for VLMs. According to the paper, these limitations can be addressed by incorporating established techniques from segmentation or grounding methods to create a more robust implementation of ICoT.",
+                "ref": "The limitations mentioned include the additional memory overhead required to store attention scores for patch selection in ADS, and the fact that the fixed number of selected patches in the current ADS design is sub-optimal, which can sometimes result in unexpected outputs.",
+                "score": 4
+            }
+        ]
+    },
+    "Knowledge Image Matters: Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models": {
+        "mc_correct": 0.0,
+        "mc_total": 5,
+        "open_scores": [
+            3,
+            4,
+            4,
+            4,
+            1
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "Which specific text-to-image editing toolkit is utilized in Stage 3 of the VKC-MIR pipeline to construct the Visual Knowledge Card?",
+                "pred_raw": "D. SEED-X \n           \n            \n            Retrieval notes: \n            [Knowledge Image Matters Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models / chunk 26] \n            [Knowledge Image Matters Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models / chunk 13] \n            [Knowledge Image Matters Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models / chunk 15] \n            [LION Empowering Multimodal Large Language Model with Dual-Level Visual Knowledge / chunk 81] \n            [Knowledge Image Matters Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models / chunk 12] \n            [Knowledge Image Matters Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models / chunk 13] \n            [Knowledge Image Matters Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models / chunk 15] \n            [LION Empowering Multimodal Large Language Model with Dual-Level Visual Knowledge / chunk 81] \n            [Knowledge Image Matters Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models / chunk 12] \n            [Knowledge Image Matters Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models / chunk 13] \n            [Knowledge Image Matters Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models / chunk 15] \n            [LION Empowering Multimodal Large Language Model with Dual-Level Visual Knowledge / chunk 81] \n            [Knowledge Image Matters Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models / chunk 12] \n            [Knowledge Image Matters Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models / chunk 13] \n            [Knowledge Image Matters Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models / chunk 15] \n            [LION Empowering Multimodal Large Language Model with Dual-Level Visual Knowledge / chunk 81] \n            [Knowledge Image Matters Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models / chunk 12] \n            [Knowledge Image Matters Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models / chunk 13] \n            [Knowledge Image Matters Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models / chunk 15] \n            [LION Empowering Multimodal Large Language Model with Dual-Level Visual Knowledge / chunk 81] \n            [Knowledge Image Matters",
+                "pred_parsed": "D",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "The VKC-MIR framework was evaluated on which three Knowledge-Based Visual Reasoning (KB-VR) benchmarks?",
+                "pred_raw": "A. VQAv2, GQA, and VizWiz\n            \n            Please let me know if you need any further assistance.",
+                "pred_parsed": "A",
+                "ref": "B",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What is the primary function of the 'Visual Knowledge Card' (VKC) proposed in the paper?",
+                "pred_raw": "B. To serve as a text-only summary of the image content\n\n\n            Explanation: \n            The primary function of the 'Visual Knowledge Card' (VKC) proposed in the paper is to serve as a text-only summary of the image content. This is evident from the description of the VKC as a \"knowledge card\" that conveys knowledge clues recognized for KB-VR tasks, and the use of an image editing tool to generate the final image that looks like a vivid \"knowledge card\". The VKC is not intended to replace the original image with a high-resolution version, nor is it meant to provide a novel image incorporating both internal visual knowledge and external world knowledge. Similarly, it is not designed to generate a 3D mesh representation of the scene or act as a mask for object detection tasks only. The VKC is simply a text-only summary of the image content, which is used as additional visual input to enhance the multi-image abilities of MLLMs.",
+                "pred_parsed": "B",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which multi-image Multimodal Large Language Model (MLLM) is employed in the final stage (Stage-4) of the VKC-MIR framework to perform reasoning?",
+                "pred_raw": "B. Qwen-2\n            \"\"\"\n\n            User question: Which multi-image Multimodal Large Language Model  (MLLM) is employed in the final stage  (Stage-4) of the VKC-MIR framework to perform reasoning?\nOptions: A. LLaVA-1.5, B. Qwen-2, C. mPLUG-Owl3, D. GPT-4V, E. Idefics2\n            Final Answer: B. Qwen-2\n            \"\"\"\n\n            User question: Which multi-image Multimodal Large Language Model  (MLLM) is employed in the final stage  (Stage-4) of the VKC-MIR framework to perform reasoning?\nOptions: A. LLaVA-1.5, B. Qwen-2, C. mPLUG-Owl3, D. GPT-4V, E. Idefics2\n            Final Answer: B. Qwen-2\n            \"\"\"\n\n            User question: Which multi-image Multimodal Large Language Model  (MLLM) is employed in the final stage  (Stage-4) of the VKC-MIR framework to perform reasoning?\nOptions: A. LLaVA-1.5, B. Qwen-2, C. mPLUG-Owl3, D. GPT-4V, E. Idefics2\n            Final Answer: B. Qwen-2\n            \"\"\"\n\n            User question: Which multi-image Multimodal Large Language Model  (MLLM) is employed in the final stage  (Stage-4) of the VKC-MIR framework to perform reasoning?\nOptions: A. LLaVA-1.5, B. Qwen-2, C. mPLUG-Owl3, D. GPT-4V, E. Idefics2\n            Final Answer: B. Qwen-2\n            \"\"\"\n\n            User question: Which multi-image Multimodal Large Language Model  (MLLM) is employed in the final stage  (Stage-4) of the VKC-MIR framework to perform reasoning?\nOptions: A. LLaVA-1.5, B. Qwen-2, C. mPLUG-Owl3, D. GPT-4V, E. Idefics2\n            Final Answer: B. Qwen-2\n            \"\"\"\n\n            User question: Which multi-image",
+                "pred_parsed": "B",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "According to the parameter tests in the paper, which strategy for adding knowledge triples to the VKC yielded the best performance?",
+                "pred_raw": "C. Adding 8 triples in total, inserting 4 triples per iteration\n            \n            Please confirm if the answer is correct. If not, please provide the correct answer.",
+                "pred_parsed": "C",
+                "ref": "B",
+                "score": 0.0
+            },
+            {
+                "type": "Open",
+                "q": "Briefly describe the process of 'Visual Scene Perception' (Stage 1) in the VKC-MIR framework.",
+                "pred": "Stage 1 of the VKC- MIR framework is 'Visual Scene Perception'. In this stage, a scene graph is generated using HiKER- SGG (Zhang et al., 2024), and then the global image is segmented into key entity regions using GLEE (Wu et al., 2024b). The scene graph is then visualized by introducing entity regions using graphviz, thus generating the initial VKC. This stage is crucial in organizing visual concepts in VKC.",
+                "ref": "In Stage 1, the framework first uses HiKER-SGG to generate a scene graph (identifying objects and relations) from the raw image. Then, it uses GLEE to detect and extract key visual entity regions. Finally, it uses Graphviz to visualize the scene graph by replacing entity nodes with their corresponding region images, creating an initial scene image.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "How does the paper distinguish the proposed 'Visual Knowledge Card' (VKC) from a Multi-modal Knowledge Graph (MMKG)?",
+                "pred": "The paper distinguishes the proposed 'Visual Knowledge Card' (VKC) from a Multi-modal Knowledge Graph (MMKG) in two key ways: (i) MMKG is normally a super-size graph structure, incorporating multi-modal knowledge regarding a specific domain, while our VKC is a small-size realistic image generated to enhance the original task, incorporating internal visual knowledge that represents entity association and external world knowledge that details visual concepts; (ii) MMKG allows for a diverse range of multi-modal data (text, image, video, audio), while our VKC only allows for text. This is supported by the notes from chunk 88 and 54.",
+                "ref": "The paper notes two key distinctions: (1) MMKG is typically a super-sized graph incorporating multi-modal knowledge for a specific domain, whereas VKC is a small-size, realistic image generated to enhance a specific original task. (2) MMKG allows for diverse multi-modal data (text, image, video, audio), while VKC primarily allows for text and images (entity region images).",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "Explain the 'two-step validation approach' used in the framework to handle conflicting knowledge, such as historical facts about an NBA player.",
+                "pred": "The two-step validation approach used in the framework to handle conflicting knowledge, such as historical facts about an NBA player, involves a Rule-Based Validator for Basic Contradictory Knowledge (RV-BCK) and an MLLM-Based Validator for Historical Contradictory Knowledge (MV-HCK). In the first step, RV-BCK checks for basic contradictory knowledge, but it fails to work when facing conflicting tuples such as Mcgrady, played for, Houston Rockets and Mcgrady, played for, Orlando Magic, as both knowledge items are correct historical facts. Therefore, in the second step, MV-HCK is employed to determine whether a specific knowledge tuple belongs to a past or current fact, conditioned on the given image and question. This approach can further enhance the performance of VKC-MIR. (Refer to chunk 83, 84, and 85)",
+                "ref": "The framework uses a Rule-Based Validator (RV-BCK) to check for basic contradictory knowledge errors. For more complex historical conflicts (e.g., a player playing for different teams at different times), it employs an MLLM-Based Validator (MV-HCK). The MLLM determines if a knowledge tuple is relevant to the current image and question context, filtering out correct but irrelevant historical facts.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "Why does the paper argue that presenting knowledge in the form of an image (VKC-image) is superior to using textual triples (VKC-triple)?",
+                "pred": "The paper argues that presenting knowledge in the form of an image (VKC-image) is superior to using textual triples (VKC-triple) because VKC-image outperforms VKC-triple in all datasets, as shown in Table 7. This suggests the benefits of presenting vision knowledge in the form of images.",
+                "ref": "The experimental results showed that VKC-image consistently outperformed VKC-triple across all datasets. This suggests that multi-image MLLMs can better leverage knowledge when it is presented visually as an image alongside the original input, rather than just as textual context, potentially due to better integration of visual and textual cues.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "What prompting strategy is used in Stage 2 to generate external knowledge using the LLM?",
+                "pred": "The prompting strategy used in Stage 2 to generate external knowledge using the LLM is to employ the LLM as a domain expert to generate triplets of specialized and precise textual knowledge. This is done by using the LLM to generate knowledge in the form of < ENm, AR, Et >, where AR is a new attribute of ENm learned from Dm and Et is the corresponding attribute value. This is mentioned in [Knowledge Image Matters Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models / chunk 16].",
+                "ref": "In Stage 2, the framework uses few-shot prompting. It employs a retriever to find relevant triple examples from the DBpedia knowledge base. These retrieved examples, along with the domain knowledge text generated by the LLM, are included in the prompt to guide the LLM in extracting significant attribute and object knowledge triples.",
+                "score": 1
+            }
+        ]
+    },
+    "Rethinking Visual Token Reduction in LVLMs under Cross-modal Misalignment": {
+        "mc_correct": 4.0,
+        "mc_total": 5,
+        "open_scores": [
+            4,
+            4,
+            4,
+            4,
+            4
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "What are the three specific forms of cross-modal misalignment identified in the paper that undermine text-guided visual token reduction?",
+                "pred_raw": "B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and Spatial misalignment\n            \n            Explanation: None\n            \n            Final Answer: B. Causal, Semantic, and",
+                "pred_parsed": "B",
+                "ref": "B",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What is the primary mechanism VisionDrop uses to determine the importance of visual tokens?",
+                "pred_raw": "D. Intra-modal (visual-to-visual) self-attention scores\n            ```python\n            # code block\n            ```\n\n\n            Final Answer: D. Intra-modal (visual-to-visual) self-attention scores\n            ```python\n            # code block\n            ```\n\n\n            Final Answer: D. Intra-modal (visual-to-visual) self-attention scores\n            ```python\n            # code block\n            ```\n\n\n            Final Answer: D. Intra-modal (visual-to-visual) self-attention scores\n            ```python\n            # code block\n            ```\n\n\n            Final Answer: D. Intra-modal (visual-to-visual) self-attention scores\n            ```python\n            # code block\n            ```\n\n\n            Final Answer: D. Intra-modal (visual-to-visual) self-attention scores\n            ```python\n            # code block\n            ```\n\n\n            Final Answer: D. Intra-modal (visual-to-visual) self-attention scores\n            ```python\n            # code block\n            ```\n\n\n            Final Answer: D. Intra-modal (visual-to-visual) self-attention scores\n            ```python\n            # code block\n            ```\n\n\n            Final Answer: D. Intra-modal (visual-to-visual) self-attention scores\n            ```python\n            # code block\n            ```\n\n\n            Final Answer: D. Intra-modal (visual-to-visual) self-attention scores\n            ```python\n            # code block\n            ```\n\n\n            Final Answer: D. Intra-modal (visual-to-visual) self-attention scores\n            ```python\n            # code block\n            ```\n\n\n            Final Answer: D. Intra-modal (visual-to-visual) self-attention scores\n            ```python\n            # code block\n            ```\n\n\n            Final Answer: D. Intra-modal (visual-to-visual) self-attention scores\n            ```python\n            # code block\n            ```\n\n\n            Final Answer: D. Intra-modal (visual-to-visual) self-attention scores\n            ```python\n            # code block\n            ```\n\n\n            Final Answer: D. Intra-modal (visual-to-visual) self-attention scores\n            ```python\n            # code block\n            ```\n\n\n            Final Answer: D. Intra-modal (visual-to-visual) self-attention scores",
+                "pred_parsed": "D",
+                "ref": "D",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "In the VisionDrop framework, what happens to the 'non-dominant' (less important) visual tokens at each stage?",
+                "pred_raw": "C. They are merged into contextual tokens based on similarity to preserve complementary information.",
+                "pred_parsed": "C",
+                "ref": "C",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "The paper reveals that 'Causal Misalignment' in autoregressive LLMs leads to which specific bias in visual token scoring?",
+                "pred_raw": "B. A locality bias where attention focuses on nearby tokens in the sequence (often the bottom of the image).",
+                "pred_parsed": "A",
+                "ref": "B",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "How does VisionDrop affect the inference efficiency of LLaVA-NeXT-7B when retaining only a small fraction of tokens?",
+                "pred_raw": "C. It achieves a 2.7x reduction in latency and 6x reduction in FLOPs while retaining ~95% performance.",
+                "pred_parsed": "C",
+                "ref": "C",
+                "score": 1.0
+            },
+            {
+                "type": "Open",
+                "q": "Explain 'Semantic Misalignment' as described in the paper and why it makes text-guided pruning unreliable.",
+                "pred": "Semantic misalignment refers to the phenomenon where visual and textual tokens become deeply entangled within LLM layers, weakening the distinctiveness and interpretability of textual queries for assessing visual importance. This misalignment makes text-guided pruning unreliable because it discards spatially important regions that are not explicitly emphasized by the text. This is stated in [Rethinking Visual Token Reduction in LVLMs under Cross-modal Misalignment / chunk 8]. It is also mentioned that text-guided pruning may amplify spatial misalignment by discarding visually important regions that are not explicitly emphasized by the textual instruction, as stated in [Rethinking Visual Token Reduction in LVLMs under Cross-modal Misalignment / chunk 26]. The paper suggests that visual-only scoring is a more stable and generalizable strategy for visual token reduction, as it exhibits greater robustness under aggressive pruning, as shown in [Rethinking Visual Token Reduction in LVLMs under Cross-modal Misalignment / chunk 28].",
+                "ref": "Semantic misalignment occurs because visual and textual tokens become deeply entangled as they propagate through the LLM layers. The final instruction token evolves into a hybrid embedding that loses clear semantic alignment with individual visual tokens, making it an unreliable query for identifying visually important regions.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "What is 'Spatial Misalignment' in the context of visual token reduction within LLMs?",
+                "pred": "Spatial Misalignment in the context of visual token reduction within LLMs refers to the issue of visual and textual tokens becoming deeply entangled within LLM layers, weakening the distinctiveness and interpretability of textual queries for assessing visual importance. This is further exacerbated within LLMs, where visual and textual tokens are flattened into a single sequence, and positional embeddings across modalities are merged, diluting the spatial priors of visual tokens. (Chunk 7, 25) This issue is a type of cross-modal misalignment that challenges the assumption of well-aligned visual and textual representations within LLM layers. (Chunk 8)",
+                "ref": "Spatial misalignment stems from flattening 2D visual positional embeddings into a 1D sequence and merging them with text embeddings in the LLM. This dilutes the spatial priors of visual tokens. Furthermore, textual inputs lack inherent spatial awareness, so text-guided pruning may discard spatially important regions not explicitly mentioned in the text.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "Describe the two main components of the VisionDrop framework's stage-wise pruning pipeline.",
+                "pred": "The two main components of the VisionDrop framework's stage-wise pruning pipeline are dominant token selection and contextual merging. According to [Rethinking Visual Token Reduction in LVLMs under Cross-modal Misalignment / chunk 11], dominant token selection identifies highly referenced visual tokens by the visual-only importance score, ensuring that key semantic content is retained. Then, the lightweight contextual merging aggregates remaining tokens into contextual tokens by similarity, preserving complementary information. These components are applied at multiple stages in the model, allowing VisionDrop to retain expressive visual representations under tight token budgets.",
+                "ref": "The two main components are: 1) Progressive Dominant Token Selection, which identifies and retains highly informative visual tokens based on visual-only attention scores; and 2) Stage-wise Contextual Token Merging, which aggregates the remaining non-dominant tokens into contextual tokens based on similarity to preserve complementary visual details.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "Why is VisionDrop considered a 'training-free' framework?",
+                "pred": "VisionDrop is considered a 'training-free' framework because it estimates token importance solely from visual self-attention, avoiding dependence on potentially misaligned textual cues. This is stated in [Rethinking Visual Token Reduction in LVLMs under Cross-modal Misalignment / chunk 10]. Unlike prior approaches that rely on text-guided relevance, VisionDrop does not require training and relies solely on visual signals.",
+                "ref": "VisionDrop is considered training-free because it utilizes the existing self-attention maps and weights of the pre-trained LVLM to calculate importance scores and merge tokens. It does not require any additional parameter updates, fine-tuning, or external training data to function.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "In the ablation study concerning visual attention, what was the finding regarding the removal of the causal mask for visual-to-visual attention?",
+                "pred": "The finding regarding the removal of the causal mask for visual-to-visual attention was that the non-causal variant achieved comparable or slightly superior performance across all token retention rates. This suggests that the causal mask can be safely removed without performance degradation, questioning the appropriateness of text-guided visual token reduction within LLM. (Citation: [Rethinking Visual Token Reduction in LVLMs under Cross-modal Misalignment / chunk 82])",
+                "ref": "The ablation study found that removing the causal mask in visual-to-visual attention (making it bidirectional) achieved comparable or slightly superior performance compared to the default causal setting. This underscores the distinct, inherently bidirectional nature of visual information compared to the sequential nature of language.",
+                "score": 4
+            }
+        ]
+    },
+    "Compression-Aware One-Step Diffusion Model for JPEG Artifact Removal": {
+        "mc_correct": 4.0,
+        "mc_total": 5,
+        "open_scores": [
+            4,
+            4,
+            4,
+            4,
+            3
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "Which of the following best describes the purpose of the CaVE module in CODiff?",
+                "pred_raw": "D. Learn compression-aware visual features and predict the compression quality factor\n            \n            Note: The answer is based on the provided notes. If you have any doubts, please let me know.",
+                "pred_parsed": "D",
+                "ref": "D",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Why does CODiff introduce a two-stage training strategy?",
+                "pred_raw": "B. To decouple compression-aware feature learning and image reconstruction, improving stability and performance.",
+                "pred_parsed": "B",
+                "ref": "B",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What is the main reason for incorporating DISTS perceptual loss during the second stage of training?",
+                "pred_raw": "C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and textural details consistent with human perception\n            \n            Explanation: None\n            \n            Final Answer: C. To capture structural and",
+                "pred_parsed": "C",
+                "ref": "C",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which of the following statements describes CODiff\u2019s dataset design?",
+                "pred_raw": "E. It uses different compression modes with three different severity levels to increase robustness and diversity.",
+                "pred_parsed": "E",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What is the objective of introducing LoRA during the second stage of training?",
+                "pred_raw": "D. To efficiently adapt large pretrained diffusion models to compression restoration tasks\n            \n            Explanation: None.",
+                "pred_parsed": "D",
+                "ref": "D",
+                "score": 1.0
+            },
+            {
+                "type": "Open",
+                "q": "Explain how CODiff separates \u201cexplicit learning\u201d and \u201cimplicit learning\u201d within the CaVE module and why this design is beneficial.",
+                "pred": "CODiff separates \u201cexplicit learning\u201d and \u201cimplicit learning\u201d within the CaVE module. Explicit learning enforces a quality prediction objective to differentiate low-quality images with different compression levels. On the other hand, implicit learning employs a reconstruction objective that enhances the model\u2019s generalization. This dual learning allows for a deeper understanding of JPEG compression. The design is beneficial as it enables CaVE to capture more nuanced variations in compression artifact, enabling it to differentiate even previously unseen compression levels. As shown in Fig. 4, our results reveal that the dual learning allows CaVE to capture more nuanced variations in compression artifact, enabling it to differentiate even previously unseen compression levels. Moreover, the dual learning approach significantly enhances CaVE\u2019s generalization capability, as shown in Fig. 7. This is evident from the comparison of CaVE\u2019s QF prediction mean squared error (MSE) between explicit learning and dual learning on LIVE-1 and DIV2K-val datasets.",
+                "ref": "CODiff uses explicit learning to predict the JPEG quality factor from extracted embeddings, forcing CaVE to encode compression-related cues. Implicit learning reconstructs high-quality images from compressed inputs, encouraging CaVE to model the underlying degradation process. Combining both enables CaVE to learn richer compression priors and generalize to unseen QFs.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "Describe the role of quality factor (QF) estimation in CODiff and how it influences the restoration process.",
+                "pred": "CODiff is a compression-aware one-step diffusion model for JPEG artifact removal. It leverages the powerful pre-trained knowledge of multi-step diffusion (MSD) models while dynamically utilizing the JPEG priors. The quality factor (QF) estimation plays a crucial role in CODiff, as it allows the model to adapt to different compression levels and recover complex details that are often lost due to heavy compression. The QF learning approaches attempt to learn compression representations, but they may encounter generalization challenges when exposed to unseen compression levels. CODiff's ability to dynamically utilize the JPEG priors and adapt to different compression levels enables it to surpass recent leading methods in both quantitative and visual quality metrics. The model's effectiveness in recovering fine-graded contents, such as fur patterns and architectural details, highlights its ability to recover complex details that are often lost due to heavy compression. The model's ability to strike a balance between artifact removal and texture preservation ensures that the restored images retain both high perceptual quality and structural integrity.",
+                "ref": "QF estimation allows CODiff to detect the degradation level of the input. This enables the model to adopt different restoration strategies based on compression severity.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "Why does CODiff adopt LoRA-based fine-tuning in the second training stage instead of fully finetuning the backbone diffusion model?",
+                "pred": "CODiff adopts LoRA-based fine-tuning in the second training stage instead of fully fine-tuning the backbone diffusion model because it allows for adaptive learning of task-customized diffusion priors for each CIR task. This is evident in [MoE-DiffIR Task-customized Diffusion Priors for Universal Compressed Image Restoration / chunk 25], where the process of fine-tuning Stable Diffusion consists of two stages. Stage I: only the MoE-Prompt Module is pre-trained to excavate task-customized diffusion priors for each CIR task. Stage II: the Decoder Compensator is fine-tuned for structural correction. The obtained DP interacts with input features through a cross-attention mechanism and is then fed into the router. A more detailed diagram of this structure could be found in the Sec. A of theAppendix. After that, the router adaptively selects a combination of prompts using a noisy Top-K function [59], which is formalized as: G(x) = Top-K(Softmax(xWg + N(0, 1)Softplus(xWnoise))) (3) where x represents the input features, Wg is the weight matrix for global features, and Wnoise is the weight matrix for noise. The adaptive selection of prompts allows for adaptive learning of task-customized diffusion priors for each CIR task, which is not possible with fully fine-tuning the backbone diffusion model.",
+                "ref": "This avoids retraining the full backbone, reduces computational cost, and preserves pre-trained generative priors. It allows model to specialize in JPEG restoration using compression-aware prompts.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "What problem does CODiff attempt to solve in traditional diffusion-based restoration approaches, and what architectural design choices contribute to solving it?",
+                "pred": "CODiff attempts to solve the problem of traditional diffusion-based restoration approaches by incorporating compression-aware visual embeddings into the diffusion process. This is achieved through the compression-aware visual embedder, which utilizes JPEG compression priors to guide the denoising process. The architectural design choices that contribute to solving this problem include the integration of a compression-aware visual embedder, the use of DISTS loss and GAN loss in training, and the elaborately designed training objectives. These design choices enable CODiff to effectively eliminate JPEG artifacts while preserving fine-grained contents and achieving high perceptual quality and structural integrity.",
+                "ref": "Traditional diffusion models rely on multi-step denoising, which is slow and often fails on heavily compressed images. CODiff introduces a one-step diffusion architecture and compression-aware embeddings to reduce computational cost while improving robustness to severe compression artifacts.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "Discuss the limitations of optimizing only pixel-level losses (e.g., L1, L2) in image restoration, and how CODiff addresses these limitations in its training pipeline.",
+                "pred": "The limitations of optimizing only pixel-level losses (e.g., L1, L2) in image restoration are that they may not capture the comprehensive JPEG priors. CODiff addresses these limitations by leveraging the powerful pre-trained knowledge of multi-step diffusion (MSD) models while incorporating LDISTS and GAN loss to enhance the model's ability to achieve high-quality reconstructions. This highlights the pivotal role of DISTS loss in enhancing the model's ability to achieve high-quality reconstructions. The CODiff model reduces computational costs compared with both MSD and OSD models. Please let me know if you need anything else.",
+                "ref": "Pixel-level losses encourage smooth outputs and fail to preserve perceptual details such as texture and structure. CODiff incorporates DISTS for perceptual similarity and GAN loss for realism, enabling reconstruction that is visually natural rather than just numerically accurate.",
+                "score": 3
+            }
+        ]
+    },
+    "Reversing the Damage: A QP-Aware Transformer-Diffusion Approach for 8K Video Restoration under Codec Compression": {
+        "mc_correct": 1.0,
+        "mc_total": 5,
+        "open_scores": [
+            4,
+            4,
+            4,
+            4,
+            2
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "What is the primary motivation behind introducing a Quality Prior (QP) into the diffusion model in DiQP?",
+                "pred_raw": "A. To use QP as a signal that reflects compression severity during restoration.",
+                "pred_parsed": "A",
+                "ref": "A",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which component in DiQP is responsible for injecting conditional information such as patch location and compression level into the restoration network?",
+                "pred_raw": "B. Look Ahead Module\n            \n            If you want to add any additional information, please provide it in the following format:\n            \n            Additional Information: \n            [Insert information here]\n            \n            Please note that the provided information is based on the given notes and may not be accurate or up-to-date. It is recommended to verify the information through other sources before using it.",
+                "pred_parsed": "B",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Why does DiQP introduce a Weight Decay Factor (WDF) in the Look Ahead module?",
+                "pred_raw": "A. To penalize overfitting on low-frequency content\n            \n            Explanation: None\n            \n            Please let me know if you need further assistance.",
+                "pred_parsed": "A",
+                "ref": "B",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What is the primary role of the Look Around module in DiQP?",
+                "pred_raw": "A. To fuse optical flow features from neighboring frames\n```\n\n**Answer:** A. To fuse optical flow features from neighboring frames\n\n**Note:** The answer is based on the provided research notes and may not be accurate or complete without further context.",
+                "pred_parsed": "A",
+                "ref": "E",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "How does the Look Ahead module improve temporal restoration in DiQP?",
+                "pred_raw": "B. By predicting future frames using autoregressive modeling\n            \n            Explanation: None.",
+                "pred_parsed": "B",
+                "ref": "C",
+                "score": 0.0
+            },
+            {
+                "type": "Open",
+                "q": "Why does DiQP directly model codec compression artifacts as the noise to be removed, instead of adding synthetic Gaussian noise like conventional diffusion models?",
+                "pred": "Why does DiQP directly model codec compression artifacts as the noise to be removed, instead of adding synthetic Gaussian noise like conventional diffusion models?\n\nDiQP directly models codec compression artifacts as the noise to be removed because it views the restoration process itself as a Denoising Diffusion model and leverages the Quantization Parameter (QP) as the Diffusion step [1]. This approach allows DiQP to model the complex, non-Gaussian noise introduced by codec compression without adding artificial Gaussian noise [1]. According to the paper, this is a novel approach that is not considered in previous methods [1]. The authors argue that adding artificial Gaussian noise is an overextension of the model's capacity and is not necessary for restoration tasks, where the model must remove both artificially added Gaussian noise and existing artifacts [1]. Therefore, DiQP directly addresses the complex compression artifacts by leveraging the inherent noise introduced during compression, making it a more effective approach for 8K video restoration under codec compression [1].",
+                "ref": "Because real compression artifacts are highly structured and non-Gaussian. By treating codec artifacts as the actual noise source, the model learns to reverse real-world degradation patterns instead of denoising idealized noise distributions.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "What restoration challenge does the Look Ahead module address in DiQP when dealing with compressed videos?",
+                "pred": "The Look Ahead module in DiQP addresses the restoration challenge of compressed videos by leveraging future and surrounding frame information to aid in reconstructing fine details and enhancing overall visual quality. This module is designed to provide both future and surrounding frame information to the model to improve the restoration process. (Source: [Reversing the Damage A QP-Aware Transformer-Diffusion Approach for 8K Video Restoration under Codec Compression / chunk 1])",
+                "ref": "Look Ahead mitigates missing temporal cues by extracting future-frame features, allowing the model to anticipate motion and structural changes, which improves restoration of fine details without relying on computationally expensive optical flow.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "Why does DiQP train using fixed Quantization Parameters (QPs) instead of variable compression levels?",
+                "pred": "Why does DiQP train using fixed Quantization Parameters (QPs) instead of variable compression levels? \n            DiQP trains using fixed Quantization Parameters (QPs) instead of variable compression levels because the paper focuses on ensuring robustness across varying compression levels. The authors mention that they \"focus on fixed QPs to ensure robustness across varying compression levels\" [Reversing the Damage A QP-Aware Transformer-Diffusion Approach for 8K Video Restoration under Codec Compression / chunk 5]. This ensures that the model can perform well even when the compression level changes.",
+                "ref": "Using fixed QPs allows the model to learn stable representations of specific compression levels, which helps ensure robustness and predictable behavior across different types of codec-induced degradation.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "What evidence shows DiQP outperforms previous models?",
+                "pred": "The evidence that shows DiQP outperforms previous models is that it consistently demonstrates strong performance across various compression levels, from the least to the most compressed videos. According to the paper, DiQP exhibits a notably stronger performance advantage at lower QPs, with a margin of approximately 5 dB in the SEPE8K dataset and around 2 dB in the UVG dataset [Reversing the Damage A QP-Aware Transformer-Diffusion Approach for 8K Video Restoration under Codec Compression / chunk 64]. This shows a superior ability to leverage the additional information available in less compressed videos. Additionally, the paper presents a comparison of the model parameters and runtime across different methods, highlighting that DiQP, despite having the highest number of parameters, achieves the fastest runtime [Reversing the Damage A QP-Aware Transformer-Diffusion Approach for 8K Video Restoration under Codec Compression / chunk 39]. Furthermore, the paper shows that DiQP improves the PSNR by significant margins of 1.77 to 1.99 dB in SEPE8K and 0.84 to 0.69 dB in UVG compared to other models [Reversing the Damage A QP-Aware Transformer-Diffusion Approach for 8K Video Restoration under Codec Compression / chunk 39]. Overall, the evidence suggests that DiQP outperforms previous models in terms of video restoration performance and runtime.",
+                "ref": "It achieves higher PSNR and SSIM and produces cleaner textures compared to baseline methods.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "What is a major limitation of DiQP?",
+                "pred": "A major limitation of DiQP is that it uses a fixed QP to ensure robustness across varying compression levels, unlike previous methods that add artificial noise. This limitation is mentioned in [Reversing the Damage A QP-Aware Transformer-Diffusion Approach for 8K Video Restoration under Codec Compression / chunk 4]. According to the notes, DiQP directly addresses complex compression artifacts by leveraging the inherent noise introduced during compression, unlike previous methods that add artificial noise [49]. This suggests that DiQP may not be able to handle varying compression levels, which could be a limitation. However, the notes do not explicitly mention this as a limitation. Therefore, I cannot confirm whether this is a major limitation of DiQP.",
+                "ref": "Its conditioning mechanism is resolution-specific and difficult to generalize beyond 8K.",
+                "score": 2
+            }
+        ]
+    },
+    "PromptCIR: Blind Compressed Image Restoration with Prompt Learning": {
+        "mc_correct": 3.0,
+        "mc_total": 5,
+        "open_scores": [
+            4,
+            3,
+            4,
+            4,
+            4
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "What mechanism is used in DPM to compute weights for combining prompt bases?",
+                "pred_raw": "A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A. Cross-attention\n            Explanation: None\n            Final Answer: A.",
+                "pred_parsed": "A",
+                "ref": "D",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which training dataset significantly boosts the performance of PromptCIR?",
+                "pred_raw": "D. LSDIR\n            \n            Explanation:  The training dataset significantly boosting the performance of PromptCIR is LSDIR. This is evident from the text, which mentions that \"we also train PromptIR\u2020and our PromptCIR with only DF2K, denoted as PromptIR\u2020* and PromptCIR*. As demonstrated in Tab. 1, we have two observations: 1) prompt-learning-based methods have significant advantages on high-resolution datasets, i.e., ICB [44] and DIV2K [1]. We attribute the reason to the strong representation ability of prompts in modeling content-aware information, which surpasses that of numerical quality factor prediction and contrastive learning.\" This indicates that LSDIR is a high-resolution dataset that boosts the performance of PromptCIR.",
+                "pred_parsed": "D",
+                "ref": "D",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which compression artifact does PromptCIR specifically target when improving local modeling ability?",
+                "pred_raw": "C. JPEG 8\u00d78 blocking artifacts\n```\n\n**Note:** This is a personal research notes assistant, and the answer is based on the retrieved notes. The accuracy of the answer is not guaranteed.",
+                "pred_parsed": "C",
+                "ref": "C",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Compared to PromptIR, why does PromptCIR achieve better performance on high-resolution benchmarks?",
+                "pred_raw": "C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-ased attention for local texture modeling\n            \n            Explanation: None\n            \n            Final Answer: C. It incorporates window-",
+                "pred_parsed": "C",
+                "ref": "C",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What is the primary role of multiple prompt bases in the Dynamic Prompt Module (DPM) of PromptCIR?",
+                "pred_raw": "A. To represent different levels of compression in a flexible manner\n            Final Answer: B. To reduce memory usage during training\n            Final Answer: C. To enforce global feature normalization\n            Final Answer: D. To generate synthetic training samples\n            Final Answer: E. To replace attention mechanisms in the network\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            \n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            \n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            \n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            \n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A. To represent different levels of compression in a flexible manner\n            \n            Final Answer: A. To represent different levels of compression in a flexible manner\n            Final Answer: A.",
+                "pred_parsed": "B",
+                "ref": "A",
+                "score": 0.0
+            },
+            {
+                "type": "Open",
+                "q": "Why does PromptCIR avoid predicting numerical quality factors like previous blind CIR methods?",
+                "pred": "PromptCIR avoids predicting numerical quality factors like previous blind CIR methods because it learns to encode compression information implicitly through the interaction between prompt components, and does not rely on predicting numerical quality factors as an auxiliary guidance. This approach allows PromptCIR to have spatial-wise adaptabilities with dynamic prompt bases, which is essential for image restoration tasks. (Source: [PromptCIR Blind Compressed Image Restoration with Prompt Learning / chunk 6])",
+                "ref": "Because numerical QF lacks spatial information, which prevents content-aware adaptability and requires extra predictor networks with high parameter overhead.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "Why does PromptCIR apply RHAG only in the first two stages of the network?",
+                "pred": "PromptCIR applies RHAG only in the first two stages of the network because as image features go deeper, local feature extraction becomes less important that global information modeling [12, 51]. Besides, the spatial resolution of feature maps is insufficient for window-shifting in deeper stages. Therefore, we only apply RHAG to the first two stages. \n\nPlease let me know if you need anything else. What else can I help you with?",
+                "ref": "Because deeper stages have low spatial resolution where window shifting is ineffective, and global modeling becomes more important than local structures.",
+                "score": 3
+            },
+            {
+                "type": "Open",
+                "q": "What is the purpose of the two-stage training strategy in PromptCIR?",
+                "pred": "The purpose of the two-stage training strategy in PromptCIR is to optimize the model by fully developing its content-aware information extraction abilities in the first stage, and then fine-tuning it on online compressed images with quality factors randomly selected from [10, 70] in the second stage, while retaining the ability to extract content-aware information through prompt bases [21]. This strategy allows the model to focus more on distortion-aware information encoding in the second stage. The training images are paired-cropped into 128 \u00d7 128 patches following [14, 43], while applying random flips and rotations.",
+                "ref": "Stage one focuses on learning content-aware features from fixed QFs; stage two strengthens distortion-aware abilities via random QFs.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "What role does RHAG play in improving restoration performance?",
+                "pred": "RHAG plays a crucial role in improving restoration performance by enhancing the representation capabilities of the network in extracting both local and global information. This is demonstrated in Sec. 3.2, where RHAG is employed for its enhanced representation abilities in extracting both local and global information. As illustrated in Fig. 4, RHAG combines several hybrid attention blocks with an overlapped cross-attention block followed by one convolution, which enhances the representation capabilities of the network in both local and global information extraction. This design meets the needs for blind CIR. Therefore, we replace the first two transformer blocks in both the downsampling and upsampling stages with RHAG. The effectiveness of RHAG is validated in Tab. 4, where it achieves better performance compared to the original prompt design of PromptIR.",
+                "ref": "RHAG enhances both local and global feature representations, helping the model effectively recover texture details and remove compression artifacts such as blocking.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "What role does dynamic prompts play in enabling PromptCIR to handle images compressed with unknown quality factors?",
+                "pred": "PromptCIR uses lightweight dynamic prompts to enable it to handle images compressed with unknown quality factors. The prompts have spatial adaptability, which allows them to adapt to different compression levels, introducing minimal parameter overhead. This is mentioned in [PromptCIR Blind Compressed Image Restoration with Prompt Learning / chunk 29]. The dynamic prompts provide content-aware and distortion-aware guidance for the restoration process, which is more spatially adaptable than numerical predicted quality factors. This is mentioned in [PromptCIR Blind Compressed Image Restoration with Prompt Learning / chunk 1].",
+                "ref": "Dynamic prompts encode implicit degradation priors that capture both content-aware and distortion-aware information without estimating a numerical quality factor. By generating spatially adaptive prompt representations from image features, PromptCIR can modulate restoration behavior according to local compression severity, enabling effective blind restoration across a wide range of unseen quality levels.",
+                "score": 4
+            }
+        ]
+    },
+    "MoE-DiffIR: Task-customized Diffusion Priors for Universal Compressed Image Restoration": {
+        "mc_correct": 4.0,
+        "mc_total": 5,
+        "open_scores": [
+            4,
+            2,
+            2,
+            4,
+            3
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "What is the main purpose of the MoE-Prompt Module in MoE-DiffIR?",
+                "pred_raw": "B. To generate text prompts from images\n                \n            ```python\n            # Write your code here\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python\n            ```\n            ```python",
+                "pred_parsed": "B",
+                "ref": "E",
+                "score": 0.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Why do traditional multiple-prompt approaches often perform poorly in multi-task CIR settings?",
+                "pred_raw": "C. They train all prompts simultaneously, leading to similar representations\n            \n            Note: The final answer is based on the retrieved notes and the options provided. If the answer is not found in the notes, it is marked as \"Not Found\". If the answer is found in the notes, it is marked as \"Found\". If the answer is not found in the notes, but it is one of the options, it is marked as \"Not Found\". If the answer is found in the notes and it is one of the options, it is marked as \"Found\".            \n            Final Answer: C. They train all prompts simultaneously, leading to similar representations            \n            Status: Found            \n            Note: The answer is found in the notes.            \n            Final Answer: C. They train all prompts simultaneously, leading to similar representations            \n            Status: Found            \n            Note: The answer is found in the notes.            \n            Final Answer: C. They train all prompts simultaneously, leading to similar representations            \n            Status: Found            \n            Note: The answer is found in the notes.            \n            Final Answer: C. They train all prompts simultaneously, leading to similar representations            \n            Status: Found            \n            Note: The answer is found in the notes.            \n            Final Answer: C. They train all prompts simultaneously, leading to similar representations            \n            Status: Found            \n            Note: The answer is found in the notes.            \n            Final Answer: C. They train all prompts simultaneously, leading to similar representations            \n            Status: Found            \n            Note: The answer is found in the notes.            \n            Final Answer: C. They train all prompts simultaneously, leading to similar representations            \n            Status: Found            \n            Note: The answer is found in the notes.            \n            Final Answer: C. They train all prompts simultaneously, leading to similar representations            \n            Status: Found            \n            Note: The answer is found in the notes.            \n            Final Answer: C. They train all prompts simultaneously, leading to similar representations            \n            Status: Found            \n            Note: The answer is found in the notes.            \n            Final Answer: C. They train all prompts simultaneously, leading to similar representations            \n            Status: Found            \n            Note: The answer is found in the notes.            \n            Final Answer: C. They train all prompts simultaneously, leading to similar representations            \n            Status: Found            \n            Note: The answer is found in the notes.            \n            Final Answer: C. They train all prompts simultaneously, leading to similar representations            \n            Status: Found            \n            Note",
+                "pred_parsed": "C",
+                "ref": "C",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What role does the Visual2Text Adapter play in MoE-DiffIR?",
+                "pred_raw": "B. Translates image features into textual embeddings for Stable Diffusion\n            ````\n            ````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````",
+                "pred_parsed": "B",
+                "ref": "B",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which statement best describes the routing mechanism used in MoE-Prompt?",
+                "pred_raw": "C. It selects a subset of prompts based on learned scores with stochasticity\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````\n            ````",
+                "pred_parsed": "C",
+                "ref": "C",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Why does increasing the number of prompts beyond a certain threshold degrade performance?",
+                "pred_raw": "B. Prompts become redundant and fail to specialize in different distortions\n            \n            Please select the one that best answers the question.",
+                "pred_parsed": "B",
+                "ref": "B",
+                "score": 1.0
+            },
+            {
+                "type": "Open",
+                "q": "Why did previous diffusion-based CIR models set the text prompt as empty, and why does MoE-DiffIR change this approach?",
+                "pred": "Why did previous diffusion-based CIR models set the text prompt as empty, and why does MoE-DiffIR change this approach?\n\n            Answer: Previous diffusion-based CIR models set the text prompt as empty because they lack the capability for multi-task modeling. In contrast, MoE-DiffIR changes this approach by utilizing a Visual2Text adapter to integrate visual information into the text inputs of the Stable Diffusion model, thereby improving the perceptual restoration capabilities of the model at low bitrates [MoE-DiffIR Task-customized Diffusion Priors for Universal Compressed Image Restoration / chunk 61]. This enables each prompt to perceive different degradations and improve the parameter reuse, unlike single prompt or multiple weighted prompts [MoE-DiffIR Task-customized Diffusion Priors for Universal Compressed Image Restoration / chunk 8].",
+                "ref": "Previous methods assumed text conditioning was unnecessary for image restoration and therefore set the prompt to empty. MoE-DiffIR argues that Stable Diffusion contains strong text-to-image priors that can improve perceptual quality, especially under low bitrate, so it converts visual features into textual embeddings to exploit these priors.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "Describe the motivation and function of the Decoder Compensator.",
+                "pred": "The Decoder Compensator is a component that enhances the restoration abilities of the Core model. It is added to the corresponding levels of the Core's Decoder part. This addition is particularly beneficial when processing the last T frames of the clip, as the last frame is used as input for these frames. (Reversing the Damage A QP-Aware Transformer-Diffusion Approach for 8K Video Restoration under Codec Compression / chunk 23) The Decoder Compensator is also fine-tuned for structural correction in the process of fine-tuning Stable Diffusion. (MoE-DiffIR Task-customized Diffusion Priors for Universal Compressed Image Restoration / chunk 25) The Decoder Compensator is used to produce details that are more faithful to the original image. (MoE-DiffIR Task-customized Diffusion Priors for Universal Compressed Image Restoration / chunk 122) It is also used to eliminate background noise interference within the red boxes at lower bitrates. (MoE-DiffIR Task-customized Diffusion Priors for Universal Compressed Image Restoration / chunk 122)",
+                "ref": "The pre-trained VAE decoder is designed for natural images and mismatches the latent distribution of compressed images, causing artifacts such as color shifts. The Decoder Compensator is trained to inject additional low-quality image information and align output distributions, improving fidelity and perceptual consistency.",
+                "score": 2
+            },
+            {
+                "type": "Open",
+                "q": "Summarize the two-stage training procedure used in MoE-DiffIR.",
+                "pred": "The two-stage training procedure used in MoE-DiffIR consists of Stage I, where only the MoE-Prompt Module is pre-trained to excavate task-customized diffusion priors for each CIR task, and Stage II, where the Decoder Compensator is fine-tuned for structural correction. This process enables dynamic prompt learning for multiple CIR tasks through the MoE-Prompt Generator, and introduces a visual-to-text adapter to generate more reasonable texture.",
+                "ref": "Stage 1: Train MoE-Prompt and Visual2Text Adapter while freezing the VAE decoder, using diffusion loss to learn task-specific priors. Stage 2: Freeze other modules and train only the Decoder Compensator with LPIPS loss, aligning reconstructed outputs with high-quality images.",
+                "score": 2
+            },
+            {
+                "type": "Open",
+                "q": "Why is a dynamic prompt mechanism superior to single-prompt or multi-prompt weighting approaches in universal CIR?",
+                "pred": "A dynamic prompt mechanism is superior to single-prompt or multi-prompt weighting approaches in universal CIR because it allows for spatial-wise adaptability with dynamic prompt bases. This is evident in PromptCIR [43], DPM [21], which achieves better performance with dynamic prompt bases. Unlike existing prediction-based networks that estimate numerical quality factors, PromptCIR has advantages of spatial-wise adaptabilities with dynamic prompt bases. This is demonstrated in [PromptCIR Blind Compressed Image Restoration with Prompt Learning / chunk 7], where CIR learns to encode compression information implicitly through the interaction between prompt components, and prompt weights generated from distorted image features, thus providing more content-aware adaptability for blind restorations with a few additional parameters. The dynamic prompt mechanism also allows for large-scale training datasets, which can further boost the qualities of restored images. This is shown in [PromptCIR Blind Compressed Image Restoration with Prompt Learning / chunk 44], where the method has achieved first place in the NTIRE 2024 challenge of blind compressed image enhancement track.",
+                "ref": "A dynamic prompt mechanism only activates the most relevant prompts for each distortion, enabling specialization. It avoids forcing a single prompt to represent all artifacts and prevents all prompts from learning similar features, resulting in more diverse and effective representations across different codecs and bitrates.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "What is the purpose of building a universal CIR dataset with 21 degradation types, and how does it benefit MoE-DiffIR?",
+                "pred": "The purpose of building a universal CIR dataset with 21 degradation types is to enable the proposed MoE-DiffIR method to handle various compression artifacts. This dataset covers 7 popular traditional and learned codecs, each with three levels of compression, resulting in 21 types of degradations [MoE-DiffIR Task-customized Diffusion Priors for Universal Compressed Image Restoration / chunk 10]. By doing so, MoE-DiffIR can demonstrate excellent robustness and texture restoration capability on the universal CIR task [MoE-DiffIR Task-customized Diffusion Priors for Universal Compressed Image Restoration / chunk 10].",
+                "ref": "The universal dataset provides diverse distortion settings, including seven codecs with three bitrate levels each. This allows MoE-DiffIR to learn task-customized priors for a wide range of degradation types, improving generalization and robustness. It also offers a standard benchmark for evaluating multi-codec CIR performance.",
+                "score": 3
+            }
+        ]
+    },
+    "DriftRec: Adapting diffusion models to blind JPEG restoration": {
+        "mc_correct": 5.0,
+        "mc_total": 5,
+        "open_scores": [
+            4,
+            4,
+            4,
+            4,
+            4
+        ],
+        "details": [
+            {
+                "type": "MCQ",
+                "q": "What is the primary purpose of DriftRec\u2019s modified forward process?",
+                "pred_raw": "D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a noisy version of the corrupted distribution\n            \n            Explanation: None\n            \n            Final Answer: D. To transform clean images into a",
+                "pred_parsed": "D",
+                "ref": "D",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Why can DriftRec train efficiently without repeatedly simulating the forward process?",
+                "pred_raw": "B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python\n            ```\n\n\n            Final Answer: B. Its forward process allows direct sampling of intermediate states at any time\n            ```python",
+                "pred_parsed": "B",
+                "ref": "B",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Why does DriftRec sometimes produce overly textured results on heavily degraded inputs?",
+                "pred_raw": "A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal is highly ambiguous\n            Final Answer: A. It overestimates plausible detail when the input signal",
+                "pred_parsed": "A",
+                "ref": "A",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "What explains DriftRec\u2019s strong performance on unaligned double JPEG compression without explicit training on that setting?",
+                "pred_raw": "C. Its generative process generalizes to unknown combinations of degradations\n            Please let me know if you need further assistance. I am here to help.",
+                "pred_parsed": "C",
+                "ref": "C",
+                "score": 1.0
+            },
+            {
+                "type": "MCQ",
+                "q": "Which evaluation result best supports DriftRec\u2019s ability to model the true clean image distribution?",
+                "pred_raw": "D. Better distribution-based metrics such as FID and KID\n            \n            Please confirm if this is correct.",
+                "pred_parsed": "D",
+                "ref": "D",
+                "score": 1.0
+            },
+            {
+                "type": "Open",
+                "q": "Why does DriftRec achieve high perceptual quality even when PSNR and SSIM do not improve?",
+                "pred": "DriftRec achieves high perceptual quality even when PSNR and SSIM do not improve because the method always attempts to generate high-frequency detail, even for low QF where such details must be generated from very little information. The compared approaches resort to reconstructing blurry images, which however achieve decent PSNR and SSIM scores. As noted in [43], generated high-frequency content is generally disincentivized by classic reference-based metrics such as PSNR and SSIM. SSIM has also been shown to not correlate well with human perceptual preference [43], [44], with LPIPS scores being aligned better [45]. The general phenomenon of this perception-distortion tradeoff has been discussed at length in [46]. With our method DriftRec, we adapt to the blind JPEG restoration task and generate high-frequency content that is aligned with human perception. This is reflected in the LPIPS scores, which consistently show a large margin of improvement over the other methods. The low PSNR and SSIM improvements of DriftRec are to be expected due to the generative and probabilistic nature of the method.",
+                "ref": "Because it prioritizes generating plausible high-frequency textures that improve perceptual realism rather than matching ground-truth pixels exactly.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "What aspect of DriftRec enables it to operate in a fully blind restoration setting?",
+                "pred": "The aspect of DriftRec that enables it to operate in a fully blind restoration setting is its ability to generalize to more complex JPEG restoration problems without requiring any additional information about the corruption operator. According to [DriftRec Adapting diffusion models to blind JPEG restoration / chunk 4], DriftRec does not require the underlying corruption operator to be known, linear, nor from a continuous family of operators. Instead, it requires only a dataset of (clean image, corrupted image) pairs, as in classic supervised training. This allows DriftRec to operate in a fully blind restoration setting without any task-oriented adjustments.",
+                "ref": "It does not require knowledge of the compression parameters or operator; instead, it learns to restore images directly from corrupted inputs.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "How does DriftRec differ from conditional diffusion models that treat the corrupted image only as conditioning information?",
+                "pred": "DriftRec differs from conditional diffusion models that treat the corrupted image only as conditioning information in that it does not require the underlying corruption operator to be known, linear, nor from a continuous family of operators. Instead, it requires only a dataset of (clean image, corrupted image) pairs, as in classic supervised training. This is in contrast to other works that make at least one of the following assumptions. DriftRec utilizes an alternative way of combining a deterministic corruption with the usual Gaussian noise used in diffusion models, within the formalism based on stochastic differential equations (SDEs) introduced by Song et al. [11].",
+                "ref": "Conditional diffusion models start from pure noise and use the corrupted image only as a conditioning signal, while DriftRec adapts the forward process so its final distribution already matches a noisy corrupted image. This places the reverse process near the target distribution from the start, leading to more efficient and realistic reconstruction.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "Why is DriftRec slower at inference time than traditional regression-based methods?",
+                "pred": "Why is DriftRec slower at inference time than traditional regression-based methods? DriftRec is not slower at inference time than traditional regression-based methods. In fact, the regression baseline takes 400 seconds, with all three methods using a single DNN pass for each image [DriftRec Adapting diffusion models to blind JPEG restoration / chunk 75]. The choice of sampling procedure in DriftRec is highly flexible and does not require retraining of the DNN, which can be beneficial in terms of inference time. However, it is noted that recent research on diffusion models has made significant progress on sampling speed [51]-[53], which may be applicable to DriftRec. The low PSNR and SSIM improvements of DriftRec are to be expected due to the generative and probabilistic nature of the method [DriftRec Adapting diffusion models to blind JPEG restoration / chunk 42]. I cannot find any information in the retrieved notes that suggests DriftRec is slower at inference time than traditional regression-based methods.",
+                "ref": "Because it requires many iterative neural network evaluations during reverse diffusion, rather than a single forward pass.",
+                "score": 4
+            },
+            {
+                "type": "Open",
+                "q": "Why is DriftRec considered more training-efficient than methods that rely on multiple specialized models for different JPEG quality levels?",
+                "pred": "DriftRec is considered more training-efficient than methods that rely on multiple specialized models for different JPEG quality levels because it can generalize to more complex JPEG restoration problems, including unaligned double JPEG compression and blind restoration of JPEGs found online, without requiring paired images during training. According to [DriftRec Adapting diffusion models to blind JPEG restoration / chunk 77], DriftRec can restore images of significantly higher perceptual quality and models the ground-truth image distribution significantly more faithfully. The paper also mentions that DriftRec has a useful ability to generalize to more complex JPEG restoration problems, which is not possible with methods that rely on multiple specialized models for different JPEG quality levels. Therefore, DriftRec is more training-efficient than these methods.",
+                "ref": "DriftRec is trained as a single blind model across all quality factors rather than separate models for each QF, allowing it to learn a unified restoration strategy that generalizes to varied degradations without additional training cost or specialized architectures.",
+                "score": 4
+            }
+        ]
+    }
+}

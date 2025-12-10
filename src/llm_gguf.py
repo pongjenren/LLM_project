@@ -7,20 +7,24 @@ from llama_cpp import Llama
 
 from .config import gguf_cfg
 
+_LLAMA_SINGLETON: Llama | None = None
 
 class GGUFLLM:
     def __init__(self):
-        # 初始化 GGUF 模型（使用 llama.cpp backend）
-        self.llm = Llama(
-            model_path=str(gguf_cfg.MODEL_PATH),
-            n_ctx=gguf_cfg.N_CTX,
-            n_gpu_layers=gguf_cfg.N_GPU_LAYERS,  # -1: 盡可能放到 GPU
-            n_threads=gguf_cfg.N_THREADS,
-            logits_all=False,
-            vocab_only=False,
-            use_mmap=True,
-            use_mlock=False,   # 如有記憶體問題可改成 True
-        )
+        global _LLAMA_SINGLETON
+        if _LLAMA_SINGLETON is None:
+            # 初始化 GGUF 模型（使用 llama.cpp backend）
+            _LLAMA_SINGLETON = Llama(
+                model_path=str(gguf_cfg.MODEL_PATH),
+                n_ctx=gguf_cfg.N_CTX,
+                n_gpu_layers=gguf_cfg.N_GPU_LAYERS,  # -1: 盡可能放到 GPU
+                n_threads=gguf_cfg.N_THREADS,
+                logits_all=False,
+                vocab_only=False,
+                use_mmap=True,
+                use_mlock=False,   # 如有記憶體問題可改成 True
+            )
+        self.llm = _LLAMA_SINGLETON
 
     def generate(
         self,

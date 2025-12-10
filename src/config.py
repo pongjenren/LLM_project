@@ -23,7 +23,10 @@ class EmbeddingConfig:
 
 @dataclass
 class LLMConfig:
-    MODEL_NAME: str = "meta-llama/Meta-Llama-3-8B-Instruct"
+    # MODEL_NAME: str = "meta-llama/Meta-Llama-3-8B-Instruct"  # 原始 backbone
+    # MODEL_NAME: str = "mistralai/Mistral-7B-v0.1"  # 先前 HF Mistral 7B
+    # MODEL_NAME: str = "MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF"  # 新 backbone
+    # MODEL_NAME: str = "microsoft/Phi-3-mini-4k-instruct"
     MAX_NEW_TOKENS: int = 512
     TEMPERATURE: float = 0.3
     TOP_P: float = 0.9
@@ -36,9 +39,11 @@ class RetrievalConfig:
 
 @dataclass
 class GGUFConfig:
-    MODEL_PATH: Path = Paths().ROOT / "models" / "meta-llama-3-8b-instruct_Q4_K_M.gguf"
+    # MODEL_PATH: Path = Paths().ROOT / "models" / "Mistral-7B-Instruct-v0.3.Q4_K_M.gguf"  # 新 backbone GGUF
+    # MODEL_PATH: Path = Paths().ROOT / "models" / "meta-llama-3-8b-instruct_Q4_K_M.gguf"
+    MODEL_PATH: Path = Paths().ROOT / "models" / "Qwen3-8B-Q4_K_M.gguf"
     N_CTX: int = 8192         # context window
-    N_GPU_LAYERS: int = -1    # -1 = as many as possible on GPU, 視 VRAM 而定
+    N_GPU_LAYERS: int = 30    # -1 = as many as possible on GPU, 視 VRAM 而定
     N_THREADS: int = 8        # CPU threads，用來做部分計算
     MAX_NEW_TOKENS: int = 512
     TEMPERATURE: float = 0.3

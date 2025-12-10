@@ -69,7 +69,8 @@ class EmbeddingStore:
             return [], [], []
 
         # Chroma supports pagination via where with offset/limit; for small corpora a single call suffices.
-        all_docs = self.collection.get(include=["documents", "metadatas", "ids"])
+        # `ids` is always returned; do not include it explicitly to satisfy newer Chroma validation.
+        all_docs = self.collection.get(include=["documents", "metadatas"])
         return all_docs.get("documents", []), all_docs.get("ids", []), all_docs.get("metadatas", [])
 
     def add_chunks(self, chunks: List[Chunk]):

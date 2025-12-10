@@ -2,22 +2,35 @@ import json
 import re
 from typing import List, Dict, Any
 
+from src.rag_pipeline import RAGPipeline
+from src.llm_gguf import GGUFLLM
+
 # ==========================================
 # 1. 模型載入區 (Pseudo Code / 偽代碼)
 # ==========================================
 
 class TargetModel:
     """這是要測試的 Model 看你要使用什麼, 麻煩你了QQ"""
+    def __init__(self):
+        # 使用既有的 RAGPipeline 當作被評測的模型
+        self.pipeline = RAGPipeline()
+
+    # def _extract_question(self, prompt: str) -> str:
+    #     """
+    #     從格式化好的 prompt 中提取原始問題，避免把指示文字一起拿去檢索。
+    #     """
+    #     match = re.search(r"Question:\s*(.+?)(?:\n|$)", prompt, flags=re.IGNORECASE)
+    #     return match.group(1).strip() if match else prompt.strip()
+
     def generate(self, prompt: str) -> str:
-        # TODO: 在這裡填入實際模型的推論代碼
-        # return model.generate(prompt)
-        return "Final Answer: B" # 假裝輸出的範例
+        # question = self._extract_question(prompt)
+        return self.pipeline.answer(prompt)
 
 class Llama3Evaluator:
     """這是用來評分的 Llama 3 模型 (LLM-as-a-Judge)，你可以選用其他模型"""
     def __init__(self):
-        # TODO: 載入 Llama 3 模型或 API，或是其他模型
-        pass
+        # 直接載入 GGUF 版本的 Llama 3 作為 Judge
+        self.model = GGUFLLM()
 
     def grade_answer(self, reference: str, prediction: str, question: str) -> int:
         """
@@ -45,9 +58,7 @@ class Llama3Evaluator:
         Output ONLY the integer score (0, 1, 2, 3, or 4). Do not output any explanation.
         """
         
-        # TODO: 呼叫 Llama 3 生成回應
-        # raw_score = self.model.generate(prompt)
-        raw_score = "3" # 假裝 Llama 3 覺得回答得不錯
+        raw_score = self.model.generate(prompt)
         
         # 解析分數 (防止模型多話)
         try:
@@ -74,7 +85,7 @@ def parse_final_answer_mc(full_text):
     
     # 如果沒有明確標籤，尋找最後出現的單獨字母
     matches = re.findall(r"\b([A-E])\b", full_text)
-    if matches: return matches[-1].upper()
+    if matches: return matches[0].upper()
     return ""
 
 def score_mc_acc(pred, correct_answer):
@@ -88,12 +99,20 @@ def format_mc_prompt(question, options):
     for idx, opt in enumerate(options):
         label = chr(65 + idx) # A, B, C...
         prompt += f"{label}. {opt}\n"
-    prompt += "\nAnswer the question and strictly follow the format: 'Final Answer: [Option Letter]'."
+    # prompt += "\nAnswer the question and strictly follow the format: 'Final Answer: [Option Letter]'."
+    prompt += "\nMCQ"
     return prompt
 
 def format_open_prompt(question):
     """格式化開放式問題 Prompt"""
-    return f"Question: {question}\nAnswer directly. Finally, provide the conclusion."
+    # return f"Question: {question}\nAnswer directly. Finally, provide the conclusion."
+    # return f"""
+    #     Instructions:
+    #     - Answer the question using ONLY the information in the retrieved notes.
+    #     - When you make a claim, try to mention the paper title or chunk index as a citation.
+    #     - If the answer is not present in the notes, explicitly say you cannot find it.
+    # """
+    return question
 
 # ==========================================
 # 主流程邏輯
