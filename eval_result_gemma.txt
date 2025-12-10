@@ -1,0 +1,46 @@
+=== Evaluation Summary ===
+Paper: LION: Empowering Multimodal Large Language Model with Dual-Level Visual Knowledge
+  - MCQ Accuracy: 0.00% (0.0/5)
+  - Open-ended Avg Score (0-4): 1.80
+Paper: LLM-Check: Investigating Detection of Hallucinations in Large Language Models
+  - MCQ Accuracy: 0.00% (0.0/5)
+  - Open-ended Avg Score (0-4): 1.80
+Paper: Interleaved-Modal Chain-of-Thought
+  - MCQ Accuracy: 0.00% (0.0/5)
+  - Open-ended Avg Score (0-4): 2.40
+Paper: Knowledge Image Matters: Improving Knowledge-Based Visual Reasoning with Multi-Image Large Language Models
+  - MCQ Accuracy: 0.00% (0.0/5)
+  - Open-ended Avg Score (0-4): 1.40
+Paper: Rethinking Visual Token Reduction in LVLMs under Cross-modal Misalignment
+  - MCQ Accuracy: 0.00% (0.0/5)
+  - Open-ended Avg Score (0-4): 2.20
+Paper: Compression-Aware One-Step Diffusion Model for JPEG Artifact Removal
+  - MCQ Accuracy: 0.00% (0.0/5)
+  - Open-ended Avg Score (0-4): 2.60
+Paper: Reversing the Damage: A QP-Aware Transformer-Diffusion Approach for 8K Video Restoration under Codec Compression
+  - MCQ Accuracy: 0.00% (0.0/5)
+  - Open-ended Avg Score (0-4): 2.20
+Paper: PromptCIR: Blind Compressed Image Restoration with Prompt Learning
+  - MCQ Accuracy: 0.00% (0.0/5)
+  - Open-ended Avg Score (0-4): 2.80
+Paper: MoE-DiffIR: Task-customized Diffusion Priors for Universal Compressed Image Restoration
+  - MCQ Accuracy: 0.00% (0.0/5)
+  - Open-ended Avg Score (0-4): 2.60
+Paper: DriftRec: Adapting diffusion models to blind JPEG restoration
+  - MCQ Accuracy: 0.00% (0.0/5)
+  - Open-ended Avg Score (0-4): 2.60
+
+| Paper                              | MCQ Accuracy (%) | Open-ended Avg (0–4) |
+| ---------------------------------- | ---------------- | -------------------- |
+| LION: Dual-Level Visual Knowledge  | 0.00             | 1.80                 |
+| LLM-Check                          | 0.00             | 1.80                 |
+| Interleaved-Modal Chain-of-Thought | 0.00             | 2.40                 |
+| Knowledge Image Matters            | 0.00             | 1.40                 |
+| Rethinking Visual Token Reduction  | 0.00             | 2.20                 |
+| One-Step Diffusion JPEG Removal    | 0.00             | 2.60                 |
+| QP-Aware 8K Video Restoration      | 0.00             | 2.20                 |
+| PromptCIR                          | 0.00             | 2.80                 |
+| MoE-DiffIR                         | 0.00             | 2.60                 |
+| DriftRec                           | 0.00             | 2.60                 |
+| **Mean**                           | **0.00%**        | **2.24**             |
+

@@ -29,3 +29,17 @@ Paper: MoE-DiffIR: Task-customized Diffusion Priors for Universal Compressed Ima
 Paper: DriftRec: Adapting diffusion models to blind JPEG restoration
   - MCQ Accuracy: 60.00% (3.0/5)
   - Open-ended Avg Score (0-4): 2.40
+
+| Paper                              | MCQ Accuracy (%) | Open-ended Avg (0–4) |
+| ---------------------------------- | ---------------- | -------------------- |
+| LION: Dual-Level Visual Knowledge  | 20.00            | 1.60                 |
+| LLM-Check                          | 0.00             | 1.80                 |
+| Interleaved-Modal Chain-of-Thought | 20.00            | 2.80                 |
+| Knowledge Image Matters            | 0.00             | 2.00                 |
+| Rethinking Visual Token Reduction  | 0.00             | 1.80                 |
+| One-Step Diffusion JPEG Removal    | 0.00             | 2.80                 |
+| QP-Aware 8K Video Restoration      | 0.00             | 0.60                 |
+| PromptCIR                          | 20.00            | 1.00                 |
+| MoE-DiffIR                         | 0.00             | 2.80                 |
+| DriftRec                           | 60.00            | 2.40                 |
+| **Mean**                           | **12.00%**       | **1.96**             |
