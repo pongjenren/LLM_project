@@ -48,7 +48,7 @@ This project implements a fully local **Retrieval-Augmented Generation (RAG)** s
 * 🧠 **Embedding + ChromaDB**：以 E5-large-v2 建立向量資料庫
 * 🎯 **Hybrid Retrieval**（semantic + BM25）
 * 🤖 **LLM generation using Llama 3 8B GGUF**（llama-cpp-python）
-* 📝 **Long-term memory module**（自動摘要最近對話）⚠️ Not implemented yet ⚠️
+* 📝 **Long-term memory module**（自動摘要最近對話)
 * 💬 **Gradio UI**（互動式查詢）
 
 完全在本地執行，**不需要任何 API 金鑰、不上傳資料、不依賴外部雲端**。
